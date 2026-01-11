@@ -15,6 +15,12 @@ plotly = ["plotly>=6"]
 
 [dependency-groups]
 doc = ["plotly (>=6)"]
+tools = [
+    "pyyaml (>=6.0.3,<7.0.0)",
+    "colour-science (>=0.4.7,<0.5.0)",
+    "networkx (>=3.6.1,<4.0.0)",
+    "numpy (>=2.4.1,<3.0.0)",
+]
 dev = [
     "black (>=25.12.0,<26.0.0)",
     "isort (>=7.0.0,<8.0.0)",
@@ -22,11 +28,22 @@ dev = [
     "pylint (>=4.0.4,<5.0.0)",
     "pre-commit (>=4.5.1,<5.0.0)",
     "mypy (>=1.19.1,<2.0.0)",
+    "types-pyyaml (>=6.0.12.20250915,<7.0.0.0)",
 ]
 
 [tool.poetry]
-packages = [{ include = "ok_palette_lab" }]
+packages = [
+    { include = "ok_palette_lab" },
+    # ok_palette_lab_tools is used only for development.
+    { include = "ok_palette_lab_tools", format = [] },
+]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint]
+disable = ["R0801", "W0511"]

@@ -12,6 +12,7 @@
     "ms-python.isort",
     "ms-python.flake8",
     "ms-python.pylint",
+    "ms-python.mypy-type-checker",
     "njpwerner.autodocstring",
     "ms-azuretools.vscode-docker",
     "lextudio.restructuredtext",
