@@ -1,0 +1,38 @@
+{
+  "build": { "dockerfile": "Dockerfile" },
+  "mounts": [
+    {
+      "type": "volume",
+      "source": "music-science-37-cache",
+      "target": "/cache_volume/"
+    }
+  ],
+  "containerEnv": {
+    "SHELL": "/bin/bash",
+    "POETRY_CACHE_DIR": "/cache_volume/poetry/"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "ms-python.flake8",
+        "ms-python.pylint",
+        "njpwerner.autodocstring",
+        "ms-azuretools.vscode-docker",
+        "lextudio.restructuredtext",
+        "trond-snekvik.simple-rst",
+        "tamasfe.even-better-toml",
+        "redhat.vscode-yaml",
+        "executablebookproject.myst-highlight"
+      ],
+      "settings": {}
+    }
+  },
+  "postCreateCommand": "bash ./.devcontainer/setup.bash",
+  "remoteUser": "ubuntu"
+}

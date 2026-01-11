@@ -1,0 +1,32 @@
+[project]
+name = "ok_palette_lab"
+version = "0.1.0"
+description = "Smooth color palettes using Oklch color space."
+authors = [
+    { name = "Kenta Kabashima", email = "kenta_program37@hotmail.co.jp" },
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = []
+
+[project.optional-dependencies]
+plotly = ["plotly>=6"]
+
+[dependency-groups]
+doc = ["plotly (>=6)"]
+dev = [
+    "black (>=25.12.0,<26.0.0)",
+    "isort (>=7.0.0,<8.0.0)",
+    "flake8 (>=7.3.0,<8.0.0)",
+    "pylint (>=4.0.4,<5.0.0)",
+    "pre-commit (>=4.5.1,<5.0.0)",
+    "mypy (>=1.19.1,<2.0.0)",
+]
+
+[tool.poetry]
+packages = [{ include = "ok_palette_lab" }]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
