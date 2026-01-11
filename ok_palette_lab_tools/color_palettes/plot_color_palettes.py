@@ -38,6 +38,7 @@ def plot_color_palettes() -> None:
                     "colorscale": color_palette.colors,
                     "cmin": 0,
                     "cmax": 1,
+                    "showscale": False,
                 }
             }
         )
