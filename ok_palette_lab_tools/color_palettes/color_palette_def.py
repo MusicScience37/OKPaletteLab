@@ -18,13 +18,13 @@ class ColorPaletteDef:
         description: Description of the color palette.
         colors: List of (position, (L, c, h)) tuples defining the colors
             in the palette.
-        interpolated_points: Number of total interpolated points in the palette.
+        num_interpolated_points: Number of total interpolated points in the palette.
     """
 
     name: str
     description: str
     colors: list[tuple[float, tuple[float, float, float]]]
-    interpolated_points: int
+    num_interpolated_points: int
 
 
 def load_color_palettes_def() -> dict[str, ColorPaletteDef]:
@@ -45,7 +45,7 @@ def load_color_palettes_def() -> dict[str, ColorPaletteDef]:
             name=palette_data["name"],
             description=palette_data["description"],
             colors=colors,
-            interpolated_points=palette_data["interpolated_points"],
+            num_interpolated_points=palette_data["num_interpolated_points"],
         )
         color_palettes_def[palette_def.name] = palette_def
 
