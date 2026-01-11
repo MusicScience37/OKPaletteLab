@@ -21,6 +21,7 @@
     "Oklch",
     "pipenv",
     "plotly",
+    "plotlyjs",
     "pylint",
     "pyyaml",
     "sdist",

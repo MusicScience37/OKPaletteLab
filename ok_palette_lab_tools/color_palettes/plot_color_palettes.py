@@ -52,7 +52,7 @@ def plot_color_palettes() -> None:
         }
     )
 
-    figure.write_html("color_palettes.html")
+    figure.write_html("color_palettes.html", include_plotlyjs="cdn")
 
 
 if __name__ == "__main__":
