@@ -14,4 +14,7 @@ TODO
 
 ## License
 
-TODO
+This project is licensed under the MIT License.
+See [License.txt](License.txt) for details.
+
+Graphics created using color palettes in this project can be used freely without any restrictions.
