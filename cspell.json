@@ -1,0 +1,21 @@
+{
+  "version": "0.2",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": [
+    "interruptible",
+    "isort",
+    "Kabashima",
+    "Kenta",
+    "MusicScience37",
+    "mypy",
+    "Oklch",
+    "pipenv",
+    "plotly",
+    "pylint",
+    "virtualenvs"
+  ],
+  "ignoreWords": [],
+  "import": []
+}
