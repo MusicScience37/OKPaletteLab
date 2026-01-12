@@ -34,7 +34,6 @@ figure.add_heatmap(
     colorscale=ok_palette_lab.plotly.blue_brown_light,
     # Set zmid=0 for diverging color palettes.
     zmid=0,
-    zsmooth="best",
 )
 figure.update_layout(
     title="Heatmap of Perlin Noise",
