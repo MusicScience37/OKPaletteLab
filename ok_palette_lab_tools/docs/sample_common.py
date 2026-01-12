@@ -49,6 +49,19 @@ def plot_with_color_palettes(
                 }
             }
         )
+        if index > 0:
+            figure.update_layout(
+                {
+                    "xaxis"
+                    + index_suffix: {
+                        "matches": "x",
+                    },
+                    "yaxis"
+                    + index_suffix: {
+                        "matches": "y",
+                    },
+                }
+            )
         if diverging:
             figure.update_layout(
                 {

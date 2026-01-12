@@ -5,4 +5,5 @@
 
 gaussian
 peaks
+perlin_noise
 ```
