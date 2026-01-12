@@ -2,7 +2,7 @@
 
 import plotly.graph_objects
 
-import ok_palette_lab.plotly
+from ok_palette_lab_tools.docs.sample_common import plot_with_color_palettes
 from ok_palette_lab_tools.test_data.gaussian import generate_positive_gaussian_data
 
 
@@ -22,52 +22,19 @@ def plot_gaussian(
 
     Returns:
         plotly.graph_objects.Figure: Figure.
+
+    Note:
+        This function works only with non-diverging color palettes.
     """
     _ignore(version)
 
     x, y, z = generate_positive_gaussian_data()
 
-    figure = plotly.graph_objects.Figure()
-    for index, color_palette_name in enumerate(color_palette_names):
-        index_suffix = str(index + 1) if index > 0 else ""
-        figure.add_heatmap(
-            z=z,
-            x=x,
-            y=y,
-            xaxis="x" + index_suffix,
-            yaxis="y" + index_suffix,
-            coloraxis="coloraxis" + index_suffix,
-            zsmooth="best",
-        )
-        figure.update_layout(
-            {
-                "coloraxis"
-                + index_suffix: {
-                    "colorscale": getattr(ok_palette_lab.plotly, color_palette_name),
-                    "showscale": False,
-                }
-            }
-        )
-        figure.add_annotation(
-            text=color_palette_name,
-            xref="x" + index_suffix + " domain",
-            yref="y" + index_suffix + " domain",
-            x=0.0,
-            y=1.0,
-            yshift=25.0,
-            align="left",
-            font={"size": 16.0},
-            showarrow=False,
-        )
-
-    figure.update_layout(
-        {
-            "grid": {
-                "columns": 2,
-                "rows": (len(color_palette_names) + 1) // 2,
-                "pattern": "independent",
-            },
-        }
+    return plot_with_color_palettes(
+        x=x,
+        y=y,
+        z=z,
+        color_palette_names=color_palette_names,
+        zsmooth="best",
+        diverging=False,
     )
-
-    return figure
