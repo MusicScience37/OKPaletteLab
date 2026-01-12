@@ -10,7 +10,7 @@ color_palettes:
       0.333: [0.5, 0.14, 0.09]
       0.666: [0.7, 0.15, 0.15]
       1.0: [0.9, 0.15, 0.28]
-    num_interpolated_points: 17
+    num_interpolated_points: 33
 
   - name: autumn_wide
     description: A color palette of white, yellow, orange, red and brown.
@@ -21,7 +21,7 @@ color_palettes:
       0.625: [0.7, 0.15, 0.15]
       0.875: [0.9, 0.15, 0.28]
       1.0: [1.0, 0.0, 0.3]
-    num_interpolated_points: 17
+    num_interpolated_points: 33
 
   - name: ocean
     description: A color palettes of blues.
@@ -29,7 +29,7 @@ color_palettes:
       0.0: [0.3, 0.1, 0.78]
       0.167: [0.4, 0.1, 0.7]
       1.0: [0.9, 0.1, 0.5]
-    num_interpolated_points: 17
+    num_interpolated_points: 33
 
   - name: ocean_wide
     description: A color palettes of blues with wider range of lightness.
@@ -39,7 +39,7 @@ color_palettes:
       0.75: [0.8, 0.1, 0.58]
       0.875: [0.9, 0.07, 0.52]
       1.0: [1.0, 0.0, 0.5]
-    num_interpolated_points: 17
+    num_interpolated_points: 33
 
   - name: red
     description: A color palette of reds.
@@ -49,7 +49,7 @@ color_palettes:
       0.5: [0.6, 0.17, 0.07]
       0.917: [0.85, 0.11, 0.2]
       1.0: [0.9, 0.1, 0.23]
-    num_interpolated_points: 17
+    num_interpolated_points: 33
 
   - name: red_wide
     description: A color palette of reds with wider range of lightness.
@@ -60,7 +60,7 @@ color_palettes:
       0.8125: [0.85, 0.11, 0.2]
       0.875: [0.9, 0.1, 0.23]
       1.0: [1.0, 0.0, 0.3]
-    num_interpolated_points: 17
+    num_interpolated_points: 33
 
   ##########################################################
   # Diverging color palette for positive and negative ranges
@@ -78,7 +78,7 @@ color_palettes:
       0.714: [0.7, 0.15, 0.15]
       0.857: [0.5, 0.14, 0.09]
       1.0: [0.3, 0.09, 0.07]
-    num_interpolated_points: 33
+    num_interpolated_points: 65
 
   - name: blue_blown_white_wide
     description: A color palette of blue, white, and brown with wider range of lightness.
@@ -95,7 +95,7 @@ color_palettes:
       0.8125: [0.5, 0.14, 0.09]
       0.9375: [0.3, 0.09, 0.07]
       1.0: [0.2, 0.07, 0.0]
-    num_interpolated_points: 33
+    num_interpolated_points: 65
 
   - name: blue_blown_light
     description: A color palette of blue, green, and brown.
@@ -111,7 +111,7 @@ color_palettes:
       0.714: [0.7, 0.15, 0.15]
       0.857: [0.5, 0.14, 0.09]
       1.0: [0.3, 0.09, 0.07]
-    num_interpolated_points: 33
+    num_interpolated_points: 65
 
   - name: blue_blown_light_wide
     description: A color palette of blue, green, and brown with wider range of lightness.
@@ -129,7 +129,7 @@ color_palettes:
       0.8125: [0.5, 0.14, 0.09]
       0.9375: [0.3, 0.09, 0.07]
       1.0: [0.2, 0.07, 0.0]
-    num_interpolated_points: 33
+    num_interpolated_points: 65
 
   - name: blue_red_white
     description: A color palette of blue, white, and red.
@@ -145,7 +145,7 @@ color_palettes:
       0.786: [0.6, 0.17, 0.07]
       0.929: [0.4, 0.15, 0.04]
       1.0: [0.3, 0.1, 0.02]
-    num_interpolated_points: 33
+    num_interpolated_points: 65
 
   - name: blue_red_white_wide
     description: A color palette of blue, white, and red with wider range of lightness.
@@ -163,7 +163,7 @@ color_palettes:
       0.875: [0.4, 0.15, 0.04]
       0.9375: [0.3, 0.1, 0.02]
       1.0: [0.2, 0.07, 0.0]
-    num_interpolated_points: 33
+    num_interpolated_points: 65
 
   - name: blue_red_light
     description: A color palette of blue, green, and red.
@@ -180,7 +180,7 @@ color_palettes:
       0.786: [0.6, 0.17, 0.07]
       0.929: [0.4, 0.15, 0.04]
       1.0: [0.3, 0.1, 0.02]
-    num_interpolated_points: 33
+    num_interpolated_points: 65
 
   - name: blue_red_light_wide
     description: A color palette of blue, green, and red with wider range of lightness.
@@ -199,4 +199,4 @@ color_palettes:
       0.875: [0.4, 0.15, 0.04]
       0.9375: [0.3, 0.1, 0.02]
       1.0: [0.2, 0.07, 0.0]
-    num_interpolated_points: 33
+    num_interpolated_points: 65
