@@ -6,7 +6,7 @@ file_format: mystnb
 
 This page shows some samples of figures using spiral patterns.
 
-Spiral patter was calculated using polar coordinates as follows:
+Spiral pattern was calculated using polar coordinates as follows:
 
 ```{math}
 z = e^{-r^2} \sin(3 \theta + 10 r)
