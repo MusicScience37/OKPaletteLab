@@ -6,6 +6,7 @@
   "words": [
     "arctan",
     "cmax",
+    "cmid",
     "cmin",
     "coloraxis",
     "colorscale",
@@ -34,6 +35,7 @@
     "sdist",
     "showscale",
     "virtualenvs",
+    "zmid",
     "zsmooth"
   ],
   "ignoreWords": [],
