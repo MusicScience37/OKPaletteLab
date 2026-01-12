@@ -14,6 +14,8 @@ def get_general_color_palette_names() -> list[str]:
         "ocean_wide",
         "red",
         "red_wide",
+        "purple_green_yellow",
+        "tea",
     ]
 
 

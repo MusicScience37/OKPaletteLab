@@ -3,7 +3,10 @@
 import numpy
 import plotly.graph_objects
 
-from ok_palette_lab_tools.test_data.gaussian import generate_gaussian_data
+from ok_palette_lab_tools.test_data.gaussian import (
+    generate_gaussian_data,
+    generate_positive_gaussian_data,
+)
 from ok_palette_lab_tools.test_data.peaks import generate_peaks_data
 from ok_palette_lab_tools.test_data.perlin_noise import generate_perlin_noise_data
 from ok_palette_lab_tools.test_data.spiral_pattern import generate_spiral_pattern_data
@@ -44,6 +47,37 @@ def create_gaussian(
         plotly.graph_objects.Figure: Figure of Gaussian.
     """
     x, y, z = generate_gaussian_data()
+
+    figure = plotly.graph_objects.Figure()
+    figure.add_heatmap(
+        z=z,
+        x=x,
+        y=y,
+        colorscale=color_palette,
+        zsmooth="best",
+    )
+    figure.update_layout(
+        yaxis={
+            "scaleanchor": "x",
+            "scaleratio": 1,
+        },
+        height=800,
+    )
+    return figure
+
+
+def create_positive_gaussian(
+    color_palette: list[tuple[float, str]],
+) -> plotly.graph_objects.Figure:
+    """Create a figure of Gaussian with only positive values.
+
+    Args:
+        color_palette (list[tuple[float, str]]): Color palette.
+
+    Returns:
+        plotly.graph_objects.Figure: Figure of Gaussian.
+    """
+    x, y, z = generate_positive_gaussian_data()
 
     figure = plotly.graph_objects.Figure()
     figure.add_heatmap(

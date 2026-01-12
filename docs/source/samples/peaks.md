@@ -94,7 +94,7 @@ figure = plot_peaks(
 )
 figure.update_layout({
     "title": "Peaks Function with General Color Palettes",
-    "height": 1000,
+    "height": 1300,
 })
 figure.show(renderer="notebook_connected")
 ```
