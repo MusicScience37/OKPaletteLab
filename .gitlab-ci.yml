@@ -1,5 +1,6 @@
 stages:
   - test
+  - deploy
 
 include:
   - template: Security/SAST.gitlab-ci.yml
@@ -43,3 +44,41 @@ spell check:
       "**/*.sh"
       "**/*.bash"
   interruptible: true
+
+build document:
+  stage: test
+  needs: []
+  image: musicscience37/pipenv:noble
+  variables:
+    POETRY_CACHE_DIR: ${CI_PROJECT_DIR}/.poetry-cache
+  script:
+    - poetry config virtualenvs.in-project true
+    - poetry env use 3.13
+    - poetry install
+    - ./docs/update_apidoc.sh
+    - poetry run sphinx-build -b html -W -q docs/source docs/build
+  cache:
+    - key:
+        prefix: poetry-linux
+        files:
+          - poetry.lock
+      paths:
+        - .poetry-cache
+  artifacts:
+    paths:
+      - docs/build
+  interruptible: true
+
+pages main:
+  stage: deploy
+  needs:
+    - build document
+  # TODO Enable this condition after checking it works as expected.
+  # rules:
+  #   - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+  image: alpine
+  script:
+    - mv docs/build public
+  artifacts:
+    paths:
+      - public
