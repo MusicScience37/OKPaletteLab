@@ -1,12 +1,14 @@
 """Functions to generate test data for color palettes."""
 
-import noise
-import numpy
 import plotly.graph_objects
 
 from ok_palette_lab_tools.color_palettes.tests.general.test_figures import (
     create_color_palette_image as create_color_palette_image_general,
 )
+from ok_palette_lab_tools.test_data.gaussian import generate_gaussian_data
+from ok_palette_lab_tools.test_data.peaks import generate_peaks_data
+from ok_palette_lab_tools.test_data.perlin_noise import generate_perlin_noise_data
+from ok_palette_lab_tools.test_data.spiral_pattern import generate_spiral_pattern_data
 
 
 def create_color_palette_image(
@@ -34,12 +36,7 @@ def create_gaussian(
     Returns:
         plotly.graph_objects.Figure: Figure of Gaussian.
     """
-    x = numpy.linspace(-3.0, 3.0, 301)
-    y = numpy.linspace(-3.0, 3.0, 301)
-    x_grid, y_grid = numpy.meshgrid(x, y)
-    z = numpy.exp(-0.5 * ((x_grid + 1) ** 2 + (y_grid - 1) ** 2)) - numpy.exp(
-        -0.5 * ((x_grid - 1) ** 2 + (y_grid + 1) ** 2)
-    )
+    x, y, z = generate_gaussian_data()
 
     figure = plotly.graph_objects.Figure()
     figure.add_heatmap(
@@ -71,16 +68,7 @@ def create_peaks(
     Returns:
         plotly.graph_objects.Figure: Figure of peaks function.
     """
-    x = numpy.linspace(-3.0, 3.0, 301)
-    y = numpy.linspace(-3.0, 3.0, 301)
-    x_grid, y_grid = numpy.meshgrid(x, y)
-    z = (
-        3 * (1 - x_grid) ** 2 * numpy.exp(-(x_grid**2) - (y_grid + 1) ** 2)
-        - 10
-        * (x_grid / 5 - x_grid**3 - y_grid**5)
-        * numpy.exp(-(x_grid**2) - y_grid**2)
-        - 1 / 3 * numpy.exp(-((x_grid + 1) ** 2) - y_grid**2)
-    )
+    x, y, z = generate_peaks_data()
 
     figure = plotly.graph_objects.Figure()
     figure.add_heatmap(
@@ -112,10 +100,7 @@ def create_perlin_noise(
     Returns:
         plotly.graph_objects.Figure: Figure of Perlin noise.
     """
-    x = numpy.linspace(0.0, 8.0, 401)
-    y = numpy.linspace(0.0, 8.0, 401)
-    x_grid, y_grid = numpy.meshgrid(x, y)
-    z = numpy.vectorize(lambda x, y: noise.pnoise2(x, y, octaves=6))(x_grid, y_grid)
+    x, y, z = generate_perlin_noise_data()
 
     figure = plotly.graph_objects.Figure()
     figure.add_heatmap(
@@ -146,13 +131,7 @@ def create_spiral_pattern(
     Returns:
         plotly.graph_objects.Figure: Figure of spiral pattern.
     """
-    x = numpy.linspace(-2.0, 2.0, 401)
-    y = numpy.linspace(-2.0, 2.0, 401)
-    x_grid, y_grid = numpy.meshgrid(x, y)
-
-    r = numpy.sqrt(x_grid**2 + y_grid**2)
-    t = numpy.arctan2(y_grid, x_grid)
-    z = numpy.sin(3 * t + 10 * r) * numpy.exp(-(r**2))
+    x, y, z = generate_spiral_pattern_data()
 
     figure = plotly.graph_objects.Figure()
     figure.add_heatmap(
