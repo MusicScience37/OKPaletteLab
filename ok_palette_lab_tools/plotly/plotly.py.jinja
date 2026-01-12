@@ -1,6 +1,6 @@
 """Color palettes for Plotly."""
 
 {% for palette in color_palettes %}
-{{ palette.name }} = {{ palette.colors }}
+{{ palette.name }}: list[tuple[float, str]] = {{ palette.colors }}
 """{{ palette.description }}"""
 {% endfor %}

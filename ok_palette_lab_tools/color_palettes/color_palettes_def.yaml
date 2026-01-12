@@ -63,9 +63,9 @@ color_palettes:
     num_interpolated_points: 33
 
   ##########################################################
-  # Diverging color palette for positive and negative ranges
+  # Diverging color palette for 0-Centered Ranges
   ##########################################################
-  - name: blue_blown_white
+  - name: blue_brown_white
     description: A color palette of blue, white, and brown.
     colors:
       0.0: [0.3, 0.1, 0.78]
@@ -80,7 +80,7 @@ color_palettes:
       1.0: [0.3, 0.09, 0.07]
     num_interpolated_points: 65
 
-  - name: blue_blown_white_wide
+  - name: blue_brown_white_wide
     description: A color palette of blue, white, and brown with wider range of lightness.
     colors:
       0.0: [0.2, 0.1, 0.86]
@@ -97,7 +97,7 @@ color_palettes:
       1.0: [0.2, 0.07, 0.0]
     num_interpolated_points: 65
 
-  - name: blue_blown_light
+  - name: blue_brown_light
     description: A color palette of blue, green, and brown.
     colors:
       0.0: [0.3, 0.1, 0.78]
@@ -113,7 +113,7 @@ color_palettes:
       1.0: [0.3, 0.09, 0.07]
     num_interpolated_points: 65
 
-  - name: blue_blown_light_wide
+  - name: blue_brown_light_wide
     description: A color palette of blue, green, and brown with wider range of lightness.
     colors:
       0.0: [0.2, 0.1, 0.86]

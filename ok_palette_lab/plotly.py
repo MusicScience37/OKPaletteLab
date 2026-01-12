@@ -1,6 +1,6 @@
 """Color palettes for Plotly."""
 
-autumn = [
+autumn: list[tuple[float, str]] = [
     (0.0, "#521615"),
     (0.03125, "#591917"),
     (0.0625, "#611d19"),
@@ -37,7 +37,7 @@ autumn = [
 ]
 """A color palette of yellow, orange, red and brown."""
 
-autumn_wide = [
+autumn_wide: list[tuple[float, str]] = [
     (0.0, "#2d0415"),
     (0.03125, "#360716"),
     (0.0625, "#3f0b17"),
@@ -74,7 +74,7 @@ autumn_wide = [
 ]
 """A color palette of white, yellow, orange, red and brown."""
 
-ocean = [
+ocean: list[tuple[float, str]] = [
     (0.0, "#27245e"),
     (0.03125, "#262b64"),
     (0.0625, "#24326a"),
@@ -111,7 +111,7 @@ ocean = [
 ]
 """A color palettes of blues."""
 
-ocean_wide = [
+ocean_wide: list[tuple[float, str]] = [
     (0.0, "#230037"),
     (0.03125, "#260841"),
     (0.0625, "#27124b"),
@@ -148,7 +148,7 @@ ocean_wide = [
 ]
 """A color palettes of blues with wider range of lightness."""
 
-red = [
+red: list[tuple[float, str]] = [
     (0.0, "#540f25"),
     (0.03125, "#5d1027"),
     (0.0625, "#661029"),
@@ -185,7 +185,7 @@ red = [
 ]
 """A color palette of reds."""
 
-red_wide = [
+red_wide: list[tuple[float, str]] = [
     (0.0, "#2d0415"),
     (0.03125, "#370519"),
     (0.0625, "#41061d"),
@@ -222,7 +222,7 @@ red_wide = [
 ]
 """A color palette of reds with wider range of lightness."""
 
-blue_blown_white = [
+blue_brown_white: list[tuple[float, str]] = [
     (0.0, "#27245e"),
     (0.015625, "#252c65"),
     (0.03125, "#23346c"),
@@ -291,7 +291,7 @@ blue_blown_white = [
 ]
 """A color palette of blue, white, and brown."""
 
-blue_blown_white_wide = [
+blue_brown_white_wide: list[tuple[float, str]] = [
     (0.0, "#230037"),
     (0.015625, "#260841"),
     (0.03125, "#27124b"),
@@ -360,7 +360,7 @@ blue_blown_white_wide = [
 ]
 """A color palette of blue, white, and brown with wider range of lightness."""
 
-blue_blown_light = [
+blue_brown_light: list[tuple[float, str]] = [
     (0.0, "#27245e"),
     (0.015625, "#252c65"),
     (0.03125, "#23346c"),
@@ -429,7 +429,7 @@ blue_blown_light = [
 ]
 """A color palette of blue, green, and brown."""
 
-blue_blown_light_wide = [
+blue_brown_light_wide: list[tuple[float, str]] = [
     (0.0, "#230037"),
     (0.015625, "#260841"),
     (0.03125, "#27124b"),
@@ -498,7 +498,7 @@ blue_blown_light_wide = [
 ]
 """A color palette of blue, green, and brown with wider range of lightness."""
 
-blue_red_white = [
+blue_red_white: list[tuple[float, str]] = [
     (0.0, "#27245e"),
     (0.015625, "#252c65"),
     (0.03125, "#23346c"),
@@ -567,7 +567,7 @@ blue_red_white = [
 ]
 """A color palette of blue, white, and red."""
 
-blue_red_white_wide = [
+blue_red_white_wide: list[tuple[float, str]] = [
     (0.0, "#230037"),
     (0.015625, "#260841"),
     (0.03125, "#27124b"),
@@ -636,7 +636,7 @@ blue_red_white_wide = [
 ]
 """A color palette of blue, white, and red with wider range of lightness."""
 
-blue_red_light = [
+blue_red_light: list[tuple[float, str]] = [
     (0.0, "#27245e"),
     (0.015625, "#252c65"),
     (0.03125, "#23346c"),
@@ -705,7 +705,7 @@ blue_red_light = [
 ]
 """A color palette of blue, green, and red."""
 
-blue_red_light_wide = [
+blue_red_light_wide: list[tuple[float, str]] = [
     (0.0, "#230037"),
     (0.015625, "#260841"),
     (0.03125, "#27124b"),

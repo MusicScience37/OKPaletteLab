@@ -4,7 +4,9 @@
   "dictionaryDefinitions": [],
   "dictionaries": [],
   "words": [
+    "apidoc",
     "arctan",
+    "autobuild",
     "cmax",
     "cmid",
     "cmin",
@@ -20,8 +22,10 @@
     "jupyterlab",
     "Kabashima",
     "Kenta",
+    "mathjax",
     "MusicScience37",
     "mypy",
+    "mystnb",
     "networkx",
     "numpy",
     "Oklch",
@@ -36,6 +40,7 @@
     "scaleratio",
     "sdist",
     "showscale",
+    "toctree",
     "virtualenvs",
     "zmid",
     "zsmooth"
