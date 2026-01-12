@@ -197,3 +197,4 @@ pyrightconfig.json
 # Generated files
 *.html
 /docs/source/api/
+/docs/jupyter_cache/

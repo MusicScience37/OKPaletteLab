@@ -8,4 +8,5 @@ Smooth color palettes using Oklch color space.
 
     license
     color_palettes
+    samples/index
     api/modules
