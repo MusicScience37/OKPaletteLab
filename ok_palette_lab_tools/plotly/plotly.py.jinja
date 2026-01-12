@@ -1,0 +1,6 @@
+"""Color palettes for Plotly."""
+
+{% for palette in color_palettes %}
+{{ palette.name }} = {{ palette.colors }}
+"""{{ palette.description }}"""
+{% endfor %}

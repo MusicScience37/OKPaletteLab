@@ -30,7 +30,8 @@
         "trond-snekvik.simple-rst",
         "tamasfe.even-better-toml",
         "redhat.vscode-yaml",
-        "executablebookproject.myst-highlight"
+        "executablebookproject.myst-highlight",
+        "samuelcolvin.jinjahtml"
       ],
       "settings": {}
     }
