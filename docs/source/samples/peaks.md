@@ -46,11 +46,8 @@ figure.update_layout(
         "scaleratio": 1,
     },
 )
-```
 
-```{code-cell}
-:tags: ["remove-input"]
-
+# Renderer specification exists to prevent issues in documentation generation.
 figure.show(renderer="notebook_connected")
 ```
 
@@ -75,11 +72,8 @@ figure.add_trace(plotly.graph_objects.Surface(
 figure.update_layout(
     title="Surface Plot of Peaks Function",
 )
-```
 
-```{code-cell}
-:tags: ["remove-input"]
-
+# Renderer specification exists to prevent issues in documentation generation.
 figure.show(renderer="notebook_connected")
 ```
 
