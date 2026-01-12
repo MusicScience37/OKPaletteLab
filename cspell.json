@@ -11,7 +11,11 @@
     "colour",
     "interp",
     "interruptible",
+    "ipykernel",
+    "ipython",
+    "ipywidgets",
     "isort",
+    "jupyterlab",
     "Kabashima",
     "Kenta",
     "MusicScience37",
@@ -24,9 +28,12 @@
     "plotlyjs",
     "pylint",
     "pyyaml",
+    "scaleanchor",
+    "scaleratio",
     "sdist",
     "showscale",
-    "virtualenvs"
+    "virtualenvs",
+    "zsmooth"
   ],
   "ignoreWords": [],
   "import": []

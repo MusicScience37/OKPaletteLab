@@ -13,6 +13,7 @@
     "ms-python.flake8",
     "ms-python.pylint",
     "ms-python.mypy-type-checker",
+    "ms-toolsai.jupyter",
     "njpwerner.autodocstring",
     "ms-azuretools.vscode-docker",
     "lextudio.restructuredtext",
