@@ -82,3 +82,4 @@ pages main:
   artifacts:
     paths:
       - public
+  pages: true
