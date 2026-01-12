@@ -73,9 +73,8 @@ pages main:
   stage: deploy
   needs:
     - build document
-  # TODO Enable this condition after checking it works as expected.
-  # rules:
-  #   - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
   image: alpine
   script:
     - mv docs/build public
