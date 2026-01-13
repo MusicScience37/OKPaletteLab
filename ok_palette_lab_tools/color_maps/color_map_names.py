@@ -1,11 +1,11 @@
-"""Get a list of all color palette names."""
+"""Get a list of all color map names."""
 
 
-def get_general_color_palette_names() -> list[str]:
-    """Get a list of general color palette names.
+def get_general_color_map_names() -> list[str]:
+    """Get a list of general color map names.
 
     Returns:
-        A list of general color palette names.
+        A list of general color map names.
     """
     return [
         "autumn",
@@ -19,11 +19,11 @@ def get_general_color_palette_names() -> list[str]:
     ]
 
 
-def get_diverging_color_palette_names() -> list[str]:
-    """Get a list of diverging color palette names.
+def get_diverging_color_map_names() -> list[str]:
+    """Get a list of diverging color map names.
 
     Returns:
-        A list of diverging color palette names.
+        A list of diverging color map names.
     """
     return [
         "blue_brown_white",

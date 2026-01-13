@@ -31,7 +31,7 @@ figure.add_heatmap(
     z=z,
     x=x,
     y=y,
-    # Specify a color palette here.
+    # Specify a color map here.
     colorscale=ok_palette_lab.plotly.autumn,
     zsmooth="best",
 )
@@ -47,22 +47,22 @@ figure.update_layout(
 figure.show(renderer="notebook_connected")
 ```
 
-## Other Color Palettes
+## Other Color Maps
 
 ```{code-cell}
 :tags: ["remove-input"]
 
-from ok_palette_lab_tools.color_palettes.color_palette_names import (
-    get_general_color_palette_names,
+from ok_palette_lab_tools.color_maps.color_map_names import (
+    get_general_color_map_names,
 )
 from ok_palette_lab_tools.docs.sample_gaussian import plot_gaussian
 
 figure = plot_gaussian(
-    color_palette_names=get_general_color_palette_names(),
+    color_map_names=get_general_color_map_names(),
     version=1,
 )
 figure.update_layout({
-    "title": "Gaussian Function with General Color Palettes",
+    "title": "Gaussian Function with General Color Maps",
     "height": 1300,
 })
 figure.show(renderer="notebook_connected")

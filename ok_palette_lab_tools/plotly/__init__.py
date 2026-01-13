@@ -1,1 +1,1 @@
-"""Tools for color palettes in Plotly."""
+"""Tools for color maps in Plotly."""

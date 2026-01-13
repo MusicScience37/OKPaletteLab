@@ -1,1 +1,1 @@
-"""Test data for color palettes."""
+"""Test data for color maps."""

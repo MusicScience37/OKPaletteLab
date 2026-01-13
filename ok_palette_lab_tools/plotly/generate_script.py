@@ -1,25 +1,21 @@
-"""Generate script for Plotly color palettes."""
+"""Generate script for Plotly color maps."""
 
 import pathlib
 import subprocess
 
 import jinja2
 
-from ok_palette_lab_tools.color_palettes.color_palette_def import (
-    load_color_palettes_def,
-)
-from ok_palette_lab_tools.color_palettes.generate_color_palette import (
-    generate_color_palette,
-)
+from ok_palette_lab_tools.color_maps.color_map_def import load_color_maps_def
+from ok_palette_lab_tools.color_maps.generate_color_map import generate_color_map
 
 THIS_DIR = pathlib.Path(__file__).absolute().parent
 
 
 def generate_script() -> None:
-    """Generate script for Plotly color palettes."""
-    color_palettes_def = load_color_palettes_def()
-    color_palettes = [
-        generate_color_palette(definition) for definition in color_palettes_def.values()
+    """Generate script for Plotly color maps."""
+    color_maps_def = load_color_maps_def()
+    color_maps = [
+        generate_color_map(definition) for definition in color_maps_def.values()
     ]
 
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(str(THIS_DIR)))
@@ -28,7 +24,7 @@ def generate_script() -> None:
     with open(str(output_path), "w", encoding="utf-8") as file:
         file.write(
             template.render(
-                color_palettes=color_palettes,
+                color_maps=color_maps,
             )
         )
         file.write("\n")

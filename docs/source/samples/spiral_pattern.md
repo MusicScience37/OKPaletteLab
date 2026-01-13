@@ -33,9 +33,9 @@ figure.add_heatmap(
     z=z,
     x=x,
     y=y,
-    # Specify a color palette here.
+    # Specify a color map here.
     colorscale=ok_palette_lab.plotly.blue_red_light_wide,
-    # Set zmid=0 for diverging color palettes.
+    # Set zmid=0 for diverging color maps.
     zmid=0,
     zsmooth="best",
 )
@@ -51,23 +51,23 @@ figure.update_layout(
 figure.show(renderer="notebook_connected")
 ```
 
-## Other Color Palettes
+## Other Color Maps
 
 ```{code-cell}
 :tags: ["remove-input"]
 
-from ok_palette_lab_tools.color_palettes.color_palette_names import (
-    get_diverging_color_palette_names,
+from ok_palette_lab_tools.color_maps.color_map_names import (
+    get_diverging_color_map_names,
 )
 from ok_palette_lab_tools.docs.sample_spiral_patter import plot_spiral_pattern
 
 figure = plot_spiral_pattern(
-    color_palette_names=get_diverging_color_palette_names(),
+    color_map_names=get_diverging_color_map_names(),
     diverging=True,
     version=4,
 )
 figure.update_layout({
-    "title": "Spiral Pattern with Diverging Color Palettes",
+    "title": "Spiral Pattern with Diverging Color Maps",
     "height": 1300,
 })
 figure.show(renderer="notebook_connected")

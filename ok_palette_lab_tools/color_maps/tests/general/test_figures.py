@@ -1,37 +1,47 @@
-"""Functions to generate test data for color palettes."""
+"""Functions to generate test data for color maps."""
 
+import numpy
 import plotly.graph_objects
 
-from ok_palette_lab_tools.color_palettes.tests.general.test_figures import (
-    create_color_palette_image as create_color_palette_image_general,
+from ok_palette_lab_tools.test_data.gaussian import (
+    generate_gaussian_data,
+    generate_positive_gaussian_data,
 )
-from ok_palette_lab_tools.test_data.gaussian import generate_gaussian_data
 from ok_palette_lab_tools.test_data.peaks import generate_peaks_data
 from ok_palette_lab_tools.test_data.perlin_noise import generate_perlin_noise_data
 from ok_palette_lab_tools.test_data.spiral_pattern import generate_spiral_pattern_data
 
 
-def create_color_palette_image(
-    color_palette: list[tuple[float, str]],
+def create_color_map_image(
+    color_map: list[tuple[float, str]],
 ) -> plotly.graph_objects.Figure:
-    """Create a figure of color palette.
+    """Create a figure of color map.
 
     Args:
-        color_palette (list[tuple[float, str]]): Color palette.
+        color_map (list[tuple[float, str]]): Color map.
 
     Returns:
-        plotly.graph_objects.Figure: Figure of color palette.
+        plotly.graph_objects.Figure: Figure of color map.
     """
-    return create_color_palette_image_general(color_palette)
+    x = numpy.linspace(0.0, 1.0, 101)
+    figure = plotly.graph_objects.Figure()
+    figure.add_heatmap(
+        z=x,
+        x=x,
+        y=[0] * len(x),
+        colorscale=color_map,
+        zsmooth="best",
+    )
+    return figure
 
 
 def create_gaussian(
-    color_palette: list[tuple[float, str]],
+    color_map: list[tuple[float, str]],
 ) -> plotly.graph_objects.Figure:
     """Create a figure of Gaussian.
 
     Args:
-        color_palette (list[tuple[float, str]]): Color palette.
+        color_map (list[tuple[float, str]]): Color map.
 
     Returns:
         plotly.graph_objects.Figure: Figure of Gaussian.
@@ -43,9 +53,39 @@ def create_gaussian(
         z=z,
         x=x,
         y=y,
-        colorscale=color_palette,
+        colorscale=color_map,
         zsmooth="best",
-        zmid=0,
+    )
+    figure.update_layout(
+        yaxis={
+            "scaleanchor": "x",
+            "scaleratio": 1,
+        },
+        height=800,
+    )
+    return figure
+
+
+def create_positive_gaussian(
+    color_map: list[tuple[float, str]],
+) -> plotly.graph_objects.Figure:
+    """Create a figure of Gaussian with only positive values.
+
+    Args:
+        color_map (list[tuple[float, str]]): Color map.
+
+    Returns:
+        plotly.graph_objects.Figure: Figure of Gaussian.
+    """
+    x, y, z = generate_positive_gaussian_data()
+
+    figure = plotly.graph_objects.Figure()
+    figure.add_heatmap(
+        z=z,
+        x=x,
+        y=y,
+        colorscale=color_map,
+        zsmooth="best",
     )
     figure.update_layout(
         yaxis={
@@ -58,12 +98,12 @@ def create_gaussian(
 
 
 def create_peaks(
-    color_palette: list[tuple[float, str]],
+    color_map: list[tuple[float, str]],
 ) -> plotly.graph_objects.Figure:
     """Create a figure of peaks function in MATLAB.
 
     Args:
-        color_palette (list[tuple[float, str]]): Color palette.
+        color_map (list[tuple[float, str]]): Color map.
 
     Returns:
         plotly.graph_objects.Figure: Figure of peaks function.
@@ -75,9 +115,8 @@ def create_peaks(
         z=z,
         x=x,
         y=y,
-        colorscale=color_palette,
+        colorscale=color_map,
         zsmooth="best",
-        zmid=0,
     )
     figure.update_layout(
         yaxis={
@@ -90,12 +129,12 @@ def create_peaks(
 
 
 def create_perlin_noise(
-    color_palette: list[tuple[float, str]],
+    color_map: list[tuple[float, str]],
 ) -> plotly.graph_objects.Figure:
     """Create a figure of Perlin noise.
 
     Args:
-        color_palette (list[tuple[float, str]]): Color palette.
+        color_map (list[tuple[float, str]]): Color map.
 
     Returns:
         plotly.graph_objects.Figure: Figure of Perlin noise.
@@ -107,8 +146,7 @@ def create_perlin_noise(
         z=z,
         x=x,
         y=y,
-        colorscale=color_palette,
-        zmid=0,
+        colorscale=color_map,
     )
     figure.update_layout(
         yaxis={
@@ -121,12 +159,12 @@ def create_perlin_noise(
 
 
 def create_spiral_pattern(
-    color_palette: list[tuple[float, str]],
+    color_map: list[tuple[float, str]],
 ) -> plotly.graph_objects.Figure:
     """Create a figure of spiral pattern.
 
     Args:
-        color_palette (list[tuple[float, str]]): Color palette.
+        color_map (list[tuple[float, str]]): Color map.
 
     Returns:
         plotly.graph_objects.Figure: Figure of spiral pattern.
@@ -138,9 +176,8 @@ def create_spiral_pattern(
         z=z,
         x=x,
         y=y,
-        colorscale=color_palette,
+        colorscale=color_map,
         zsmooth="best",
-        zmid=0,
     )
     figure.update_layout(
         yaxis={

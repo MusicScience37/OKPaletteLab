@@ -30,9 +30,9 @@ figure.add_heatmap(
     z=z,
     x=x,
     y=y,
-    # Specify a color palette here.
+    # Specify a color map here.
     colorscale=ok_palette_lab.plotly.blue_brown_light,
-    # Set zmid=0 for diverging color palettes.
+    # Set zmid=0 for diverging color maps.
     zmid=0,
 )
 figure.update_layout(
@@ -47,23 +47,23 @@ figure.update_layout(
 figure.show(renderer="notebook_connected")
 ```
 
-## Other Color Palettes
+## Other Color Maps
 
 ```{code-cell}
 :tags: ["remove-input"]
 
-from ok_palette_lab_tools.color_palettes.color_palette_names import (
-    get_general_color_palette_names,
+from ok_palette_lab_tools.color_maps.color_map_names import (
+    get_general_color_map_names,
 )
 from ok_palette_lab_tools.docs.sample_perlin_noise import plot_perlin_noise
 
 figure = plot_perlin_noise(
-    color_palette_names=get_general_color_palette_names(),
+    color_map_names=get_general_color_map_names(),
     diverging=False,
     version=4,
 )
 figure.update_layout({
-    "title": "Perlin Noise with General Color Palettes",
+    "title": "Perlin Noise with General Color Maps",
     "height": 1300,
 })
 figure.show(renderer="notebook_connected")
@@ -72,18 +72,18 @@ figure.show(renderer="notebook_connected")
 ```{code-cell}
 :tags: ["remove-input"]
 
-from ok_palette_lab_tools.color_palettes.color_palette_names import (
-    get_diverging_color_palette_names,
+from ok_palette_lab_tools.color_maps.color_map_names import (
+    get_diverging_color_map_names,
 )
 from ok_palette_lab_tools.docs.sample_perlin_noise import plot_perlin_noise
 
 figure = plot_perlin_noise(
-    color_palette_names=get_diverging_color_palette_names(),
+    color_map_names=get_diverging_color_map_names(),
     diverging=True,
     version=4,
 )
 figure.update_layout({
-    "title": "Perlin Noise with Diverging Color Palettes",
+    "title": "Perlin Noise with Diverging Color Maps",
     "height": 1300,
 })
 figure.show(renderer="notebook_connected")

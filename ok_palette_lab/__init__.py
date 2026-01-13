@@ -1,1 +1,1 @@
-"""Smooth color palettes using Oklch color space."""
+"""Smooth color maps using Oklch color space."""

@@ -1,20 +1,20 @@
-"""Generate a color palette."""
+"""Generate a color map."""
 
 import colour
 import numpy
 
-from ok_palette_lab_tools.color_palettes.color_palette import ColorPalette
-from ok_palette_lab_tools.color_palettes.color_palette_def import ColorPaletteDef
+from ok_palette_lab_tools.color_maps.color_map import ColorMap
+from ok_palette_lab_tools.color_maps.color_map_def import ColorMapDef
 
 
-def generate_color_palette(definition: ColorPaletteDef) -> ColorPalette:
-    """Generate a color palette from its definition.
+def generate_color_map(definition: ColorMapDef) -> ColorMap:
+    """Generate a color map from its definition.
 
     Args:
-        definition: Definition of the color palette.
+        definition: Definition of the color map.
 
     Returns:
-        Generated color palette.
+        Generated color map.
     """
     positions = numpy.array([position for position, _ in definition.colors])
     lch_colors = [lch for _, lch in definition.colors]
@@ -35,11 +35,11 @@ def generate_color_palette(definition: ColorPaletteDef) -> ColorPalette:
 
     rgb_in_bytes = numpy.round(rgb_interp * 255).astype(int)
     if numpy.any(rgb_in_bytes < 0) or numpy.any(rgb_in_bytes > 255):
-        print(f"Warning: Color palette '{definition.name}' has out-of-gamut colors.")
+        print(f"Warning: Color map '{definition.name}' has out-of-gamut colors.")
 
     rgb_in_hex = [f"#{r:02x}{g:02x}{b:02x}" for r, g, b in rgb_in_bytes]
 
-    return ColorPalette(
+    return ColorMap(
         name=definition.name,
         description=definition.description,
         colors=list(zip(positions_interp, rgb_in_hex)),
