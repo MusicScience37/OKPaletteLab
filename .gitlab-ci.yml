@@ -82,3 +82,12 @@ pages main:
     paths:
       - public
   pages: true
+
+publish-package:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v/
+  script:
+    - poetry build
+    - poetry config pypi-token.pypi ${PYPI_TOKEN}
+    - poetry publish
