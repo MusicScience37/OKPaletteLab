@@ -7,8 +7,22 @@ authors = [
 ]
 license = "MIT"
 readme = "README.md"
+keywords = ["color map", "Oklch"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Typing :: Typed",
+]
 requires-python = ">=3.12,<3.14"
 dependencies = []
+
+[project.urls]
+documentation = "https://okpalettelab.musicscience37.com"
+repository = "https://gitlab.com/MusicScience37Projects/utility-libraries/OKPaletteLab"
 
 [project.optional-dependencies]
 plotly = ["plotly>=6"]
