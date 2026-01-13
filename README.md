@@ -1,6 +1,6 @@
 # OKPaletteLab
 
-Smooth color palettes using Oklch color space. (Currently prototyping...)
+Smooth color maps using Oklch color space. (Currently prototyping...)
 
 TODO: Some badges here.
 
@@ -17,4 +17,4 @@ TODO
 This project is licensed under the MIT License.
 See [License.txt](License.txt) for details.
 
-Graphics created using color palettes in this project can be used freely without any restrictions.
+Graphics created using color maps in this project can be used freely without any restrictions.

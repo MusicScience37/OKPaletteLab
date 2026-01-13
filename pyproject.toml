@@ -1,7 +1,7 @@
 [project]
 name = "ok_palette_lab"
 version = "0.1.0"
-description = "Smooth color palettes using Oklch color space."
+description = "Smooth color maps using Oklch color space."
 authors = [
     { name = "Kenta Kabashima", email = "kenta_program37@hotmail.co.jp" },
 ]

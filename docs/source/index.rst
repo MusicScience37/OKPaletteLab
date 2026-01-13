@@ -1,12 +1,12 @@
 OKPaletteLab
 ===============
 
-Smooth color palettes using Oklch color space.
+Smooth color maps using Oklch color space.
 
 .. toctree::
     :maxdepth: 1
 
     license
-    color_palettes
+    color_maps
     samples/index
     api/modules
