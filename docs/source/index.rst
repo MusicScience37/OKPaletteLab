@@ -10,3 +10,4 @@ Smooth color maps using Oklch color space.
     color_maps
     samples/index
     api/modules
+    release_notes/index
