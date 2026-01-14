@@ -12,7 +12,7 @@ import plotly.io
 plotly.io.renderers.default = "notebook_connected"
 ```
 
-## Color Maps for General Ranges
+## Sequential Color Maps for General Ranges
 
 ```{code-cell}
 :tags: ["remove-input"]
