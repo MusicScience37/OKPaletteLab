@@ -1,4 +1,4 @@
-# Samples
+# Samples Figures
 
 ```{toctree}
 :maxdepth: 1

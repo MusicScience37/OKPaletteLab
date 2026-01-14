@@ -7,6 +7,7 @@ Smooth color maps using Oklch color space.
     :maxdepth: 1
 
     license
+    how_to/index
     color_maps
     samples/index
     api/modules

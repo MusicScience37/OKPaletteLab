@@ -10,7 +10,11 @@ Smooth color maps using Oklch color space. (Currently prototyping...)
 
 ## Installation
 
-TODO
+This library is available on PyPI. You can install it using pip:
+
+```bash
+pip install ok-palette-lab
+```
 
 ## Usage
 
