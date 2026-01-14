@@ -198,3 +198,5 @@ pyrightconfig.json
 *.html
 /docs/source/api/
 /docs/jupyter_execute/
+/docs/jupyter_cache/
+/docs/doctrees/

@@ -45,7 +45,7 @@ extensions += ["myst_nb"]  # This will automatically include myst_parser
 myst_heading_anchors = 4
 
 nb_execution_mode = "cache"
-nb_execution_cache_path = str(THIS_DIR.parent / "build" / "jupyter_cache")
+nb_execution_cache_path = str(THIS_DIR.parent / "jupyter_cache")
 
 # setting of MathJax
 # Extension for MathJax is already enabled by myst_nb.
