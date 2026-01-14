@@ -15,6 +15,14 @@ z = 3(1-x)^2 e^{-x^2 - (y+1)^2}
 ```{code-cell}
 :tags: ["remove-input"]
 
+# Required to show figures.
+import plotly.io
+plotly.io.renderers.default = "notebook_connected"
+```
+
+```{code-cell}
+:tags: ["remove-input"]
+
 from ok_palette_lab_tools.test_data.peaks import generate_peaks_data
 ```
 
@@ -47,8 +55,7 @@ figure.update_layout(
     },
 )
 
-# Renderer specification exists to prevent issues in documentation generation.
-figure.show(renderer="notebook_connected")
+figure.show()
 ```
 
 ## Example of Plotting a Surface Plot
@@ -73,8 +80,7 @@ figure.update_layout(
     title="Surface Plot of Peaks Function",
 )
 
-# Renderer specification exists to prevent issues in documentation generation.
-figure.show(renderer="notebook_connected")
+figure.show()
 ```
 
 ## Other Color Maps
@@ -96,7 +102,7 @@ figure.update_layout({
     "title": "Peaks Function with General Color Maps",
     "height": 1300,
 })
-figure.show(renderer="notebook_connected")
+figure.show()
 ```
 
 ```{code-cell}
@@ -116,5 +122,5 @@ figure.update_layout({
     "title": "Peaks Function with Diverging Color Maps",
     "height": 1300,
 })
-figure.show(renderer="notebook_connected")
+figure.show()
 ```
