@@ -13,6 +13,14 @@ z = e^{-((x+1)^2 + (y-1)^2)/2} + 0.3 e^{-((x-1)^2 + (y+1)^2)/2}
 ```{code-cell}
 :tags: ["remove-input"]
 
+# Required to show figures.
+import plotly.io
+plotly.io.renderers.default = "notebook_connected"
+```
+
+```{code-cell}
+:tags: ["remove-input"]
+
 from ok_palette_lab_tools.test_data.gaussian import generate_positive_gaussian_data
 ```
 
@@ -43,8 +51,7 @@ figure.update_layout(
     },
 )
 
-# Renderer specification exists to prevent issues in documentation generation.
-figure.show(renderer="notebook_connected")
+figure.show()
 ```
 
 ## Other Color Maps
@@ -65,5 +72,5 @@ figure.update_layout({
     "title": "Gaussian Function with General Color Maps",
     "height": 1300,
 })
-figure.show(renderer="notebook_connected")
+figure.show()
 ```

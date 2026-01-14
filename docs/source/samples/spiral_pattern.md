@@ -15,6 +15,14 @@ z = e^{-r^2} \sin(3 \theta + 10 r)
 ```{code-cell}
 :tags: ["remove-input"]
 
+# Required to show figures.
+import plotly.io
+plotly.io.renderers.default = "notebook_connected"
+```
+
+```{code-cell}
+:tags: ["remove-input"]
+
 from ok_palette_lab_tools.test_data.spiral_pattern import generate_spiral_pattern_data
 ```
 
@@ -47,8 +55,7 @@ figure.update_layout(
     },
 )
 
-# Renderer specification exists to prevent issues in documentation generation.
-figure.show(renderer="notebook_connected")
+figure.show()
 ```
 
 ## Other Color Maps
@@ -70,5 +77,5 @@ figure.update_layout({
     "title": "Spiral Pattern with Diverging Color Maps",
     "height": 1300,
 })
-figure.show(renderer="notebook_connected")
+figure.show()
 ```

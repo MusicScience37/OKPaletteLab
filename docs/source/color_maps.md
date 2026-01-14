@@ -4,6 +4,14 @@ file_format: mystnb
 
 # Color Maps
 
+```{code-cell}
+:tags: ["remove-input"]
+
+# Required to show figures.
+import plotly.io
+plotly.io.renderers.default = "notebook_connected"
+```
+
 ## Color Maps for General Ranges
 
 ```{code-cell}
@@ -18,7 +26,7 @@ figure = plot_color_maps(
     z_range=(0.0, 1.0),
 )
 figure.update_layout(height=800)
-figure.show(renderer="notebook_connected")
+figure.show()
 ```
 
 ## Diverging Color Maps for 0-Centered Ranges
@@ -35,5 +43,5 @@ figure = plot_color_maps(
     z_range=(-1.0, 1.0),
 )
 figure.update_layout(height=800)
-figure.show(renderer="notebook_connected")
+figure.show()
 ```

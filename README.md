@@ -8,18 +8,6 @@ Smooth color maps using Oklch color space. (Currently prototyping...)
 ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline-status/MusicScience37Projects%2Futility-libraries%2FOKPaletteLab?branch=main)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-## Installation
-
-This library is available on PyPI. You can install it using pip:
-
-```bash
-pip install ok-palette-lab
-```
-
-## Usage
-
-TODO
-
 ## Documentation
 
 Documentation is available at:

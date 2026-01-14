@@ -41,6 +41,7 @@
     "pylint",
     "pypi",
     "pyyaml",
+    "reversescale",
     "scaleanchor",
     "scaleratio",
     "scipy",
