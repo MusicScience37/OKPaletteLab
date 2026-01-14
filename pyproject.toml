@@ -1,6 +1,6 @@
 [project]
 name = "ok_palette_lab"
-version = "0.1.0a4"
+version = "0.1.0a5"
 description = "Smooth color maps using Oklch color space."
 authors = [
     { name = "Kenta Kabashima", email = "kenta_program37@hotmail.co.jp" },
@@ -8,8 +8,9 @@ authors = [
 license = "MIT"
 readme = "README.md"
 keywords = ["color map", "Oklch"]
+# Classifiers: https://pypi.org/classifiers/
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
     # poetry says that the following classifier of license is deprecated,
