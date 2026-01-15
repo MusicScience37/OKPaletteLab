@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ size }}" height="{{ size }}" viewBox="0 0 {{ size }} {{ size }}">
+    <defs>
+        <linearGradient id="grad_main" x1="0%" y1="100%" x2="100%" y2="0%">
+            {% for position, color in color_map.colors %}
+            <stop offset="{{ position * 100 }}%" stop-color="{{ color }}" />
+            {% endfor %}
+        </linearGradient>
+    </defs>
+
+    {# Background #}
+    <rect x="0" y="0" width="{{ size }}" height="{{ size }}" fill="{{ background_color }}" />
+
+    {# Foreground #}
+    <rect x="{{ margin }}" y="{{ margin }}" width="{{ size - 2 * margin }}" height="{{ size - 2 * margin }}"
+        rx="{{ radius }}" ry="{{ radius }}" fill="url(#grad_main)" />
+</svg>
