@@ -20,5 +20,8 @@
       "source.organizeImports": "explicit"
     }
   },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
   "isort.args": ["--profile", "black"]
 }
