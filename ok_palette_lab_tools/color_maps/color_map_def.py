@@ -10,21 +10,33 @@ COLOR_MAPS_DEF_PATH = THIS_DIR / "color_maps_def.yaml"
 
 
 @dataclasses.dataclass
+class ColorMapSegmentDef:
+    """Definition of a color map segment.
+
+    Attributes:
+        type: Type of the segment (e.g., 'linear_lightness').
+        colors: List of (L, c, h) tuples defining the colors in the segment.
+        num_interpolated_points: Number of total interpolated points in the segment.
+    """
+
+    type: str
+    colors: list[tuple[float, float, float]]
+    num_interpolated_points: int
+
+
+@dataclasses.dataclass
 class ColorMapDef:
     """Definition of a color map.
 
     Attributes:
         name: Name of the color map.
         description: Description of the color map.
-        colors: List of (position, (L, c, h)) tuples defining the colors
-            in the map.
-        num_interpolated_points: Number of total interpolated points in the map.
+        segments: List of segments defining the colors in the map.
     """
 
     name: str
     description: str
-    colors: list[tuple[float, tuple[float, float, float]]]
-    num_interpolated_points: int
+    segments: list[ColorMapSegmentDef]
 
 
 def load_color_maps_def() -> dict[str, ColorMapDef]:
@@ -38,14 +50,27 @@ def load_color_maps_def() -> dict[str, ColorMapDef]:
 
     color_maps_def: dict[str, ColorMapDef] = {}
     for map_data in raw_data["color_maps"]:
-        colors = [
-            (position, tuple(lch)) for position, lch in map_data["colors"].items()
-        ]
+        segments: list[ColorMapSegmentDef] = []
+        for segment in map_data["segments"]:
+            seg_type = segment["type"]
+            raw_colors = segment["colors"]
+            colors = [
+                (float(color[0]), float(color[1]), float(color[2]))
+                for color in raw_colors
+            ]
+            num_points = segment["num_interpolated_points"]
+            segments.append(
+                ColorMapSegmentDef(
+                    type=seg_type,
+                    colors=colors,
+                    num_interpolated_points=int(num_points),
+                )
+            )
+
         map_def = ColorMapDef(
             name=map_data["name"],
             description=map_data["description"],
-            colors=colors,
-            num_interpolated_points=map_data["num_interpolated_points"],
+            segments=segments,
         )
         color_maps_def[map_def.name] = map_def
 
