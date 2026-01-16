@@ -82,4 +82,4 @@ build-backend = "poetry.core.masonry.api"
 profile = "black"
 
 [tool.pylint]
-disable = ["R0801", "W0511", "C0301", "R0913"]
+disable = ["R0801", "W0511", "C0301", "R0913", "R0914"]
