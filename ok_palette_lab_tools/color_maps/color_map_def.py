@@ -17,11 +17,15 @@ class ColorMapSegmentDef:
         type: Type of the segment (e.g., 'linear_lightness').
         colors: List of (L, c, h) tuples defining the colors in the segment.
         num_interpolated_points: Number of total interpolated points in the segment.
+        width: Width parameter for diverging segments (optional).
+        power: Power parameter for diverging segments (optional).
     """
 
     type: str
     colors: list[tuple[float, float, float]]
     num_interpolated_points: int
+    width: float | None
+    power: float | None
 
 
 @dataclasses.dataclass
@@ -59,11 +63,15 @@ def load_color_maps_def() -> dict[str, ColorMapDef]:
                 for color in raw_colors
             ]
             num_points = segment["num_interpolated_points"]
+            width = segment.get("width", None)
+            power = segment.get("power", None)
             segments.append(
                 ColorMapSegmentDef(
                     type=seg_type,
                     colors=colors,
                     num_interpolated_points=int(num_points),
+                    width=float(width) if width is not None else None,
+                    power=float(power) if power is not None else None,
                 )
             )
 
