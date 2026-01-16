@@ -4,131 +4,91 @@
             
             <stop offset="0.0%" stop-color="#27245e" />
             
-            <stop offset="1.5625%" stop-color="#252c65" />
+            <stop offset="2.31065468549%" stop-color="#242f68" />
             
-            <stop offset="3.125%" stop-color="#23346c" />
+            <stop offset="4.62130937099%" stop-color="#203b72" />
             
-            <stop offset="4.6875%" stop-color="#1f3c73" />
+            <stop offset="6.93196405648%" stop-color="#19477a" />
             
-            <stop offset="6.25%" stop-color="#1a4478" />
+            <stop offset="9.24261874198%" stop-color="#195183" />
             
-            <stop offset="7.8125%" stop-color="#184c7e" />
+            <stop offset="11.5532734275%" stop-color="#1d5c8b" />
             
-            <stop offset="9.375%" stop-color="#1a5384" />
+            <stop offset="13.863928113%" stop-color="#206694" />
             
-            <stop offset="10.9375%" stop-color="#1c5a8a" />
+            <stop offset="16.1745827985%" stop-color="#25709c" />
             
-            <stop offset="12.5%" stop-color="#1f6190" />
+            <stop offset="18.485237484%" stop-color="#2a7ba4" />
             
-            <stop offset="14.0625%" stop-color="#216896" />
+            <stop offset="20.7958921694%" stop-color="#3085ad" />
             
-            <stop offset="15.625%" stop-color="#25709c" />
+            <stop offset="23.1065468549%" stop-color="#3690b4" />
             
-            <stop offset="17.1875%" stop-color="#2877a1" />
+            <stop offset="25.4172015404%" stop-color="#3d9bbc" />
             
-            <stop offset="18.75%" stop-color="#2c7ea7" />
+            <stop offset="27.7278562259%" stop-color="#44a6c4" />
             
-            <stop offset="20.3125%" stop-color="#3086ad" />
+            <stop offset="30.0385109114%" stop-color="#4cb1cb" />
             
-            <stop offset="21.875%" stop-color="#348db2" />
+            <stop offset="32.3491655969%" stop-color="#55bbd3" />
             
-            <stop offset="23.4375%" stop-color="#3994b8" />
+            <stop offset="34.6598202824%" stop-color="#5ec6da" />
             
-            <stop offset="25.0%" stop-color="#3e9cbd" />
+            <stop offset="36.9704749679%" stop-color="#68d2e0" />
             
-            <stop offset="26.5625%" stop-color="#43a3c2" />
+            <stop offset="39.2811296534%" stop-color="#76dde3" />
             
-            <stop offset="28.125%" stop-color="#48abc8" />
+            <stop offset="41.5917843389%" stop-color="#85e7e5" />
             
-            <stop offset="29.6875%" stop-color="#4eb2cd" />
+            <stop offset="43.9024390244%" stop-color="#95f2e8" />
             
-            <stop offset="31.25%" stop-color="#54bad2" />
+            <stop offset="45.9349593496%" stop-color="#a8f8e5" />
             
-            <stop offset="32.8125%" stop-color="#5ac2d7" />
+            <stop offset="47.9674796748%" stop-color="#bffcdb" />
             
-            <stop offset="34.375%" stop-color="#60c9dc" />
+            <stop offset="50.0%" stop-color="#d3fbcf" />
             
-            <stop offset="35.9375%" stop-color="#67d1e0" />
+            <stop offset="52.0325203252%" stop-color="#def6b2" />
             
-            <stop offset="37.5%" stop-color="#70d8e2" />
+            <stop offset="54.0650406504%" stop-color="#e9ec96" />
             
-            <stop offset="39.0625%" stop-color="#7ae0e4" />
+            <stop offset="56.0975609756%" stop-color="#efe17f" />
             
-            <stop offset="40.625%" stop-color="#85e7e5" />
+            <stop offset="58.4082156611%" stop-color="#efd26d" />
             
-            <stop offset="42.1875%" stop-color="#90efe7" />
+            <stop offset="60.7188703466%" stop-color="#efc35d" />
             
-            <stop offset="43.75%" stop-color="#9df5e7" />
+            <stop offset="63.0295250321%" stop-color="#eeb44f" />
             
-            <stop offset="45.3125%" stop-color="#abfae5" />
+            <stop offset="65.3401797176%" stop-color="#eca543" />
             
-            <stop offset="46.875%" stop-color="#b9fcdf" />
+            <stop offset="67.6508344031%" stop-color="#ea963b" />
             
-            <stop offset="48.4375%" stop-color="#c6fcd7" />
+            <stop offset="69.9614890886%" stop-color="#e68636" />
             
-            <stop offset="50.0%" stop-color="#d3fcd1" />
+            <stop offset="72.2721437741%" stop-color="#de7934" />
             
-            <stop offset="51.5625%" stop-color="#d8f9c1" />
+            <stop offset="74.5827984596%" stop-color="#d46e32" />
             
-            <stop offset="53.125%" stop-color="#e0f5af" />
+            <stop offset="76.8934531451%" stop-color="#ca6330" />
             
-            <stop offset="54.6875%" stop-color="#e8ef9c" />
+            <stop offset="79.2041078306%" stop-color="#c0592e" />
             
-            <stop offset="56.25%" stop-color="#ede689" />
+            <stop offset="81.514762516%" stop-color="#b54e2d" />
             
-            <stop offset="57.8125%" stop-color="#efdc79" />
+            <stop offset="83.8254172015%" stop-color="#ab442b" />
             
-            <stop offset="59.375%" stop-color="#efd26d" />
+            <stop offset="86.136071887%" stop-color="#9f3b29" />
             
-            <stop offset="60.9375%" stop-color="#efc862" />
+            <stop offset="88.4467265725%" stop-color="#923426" />
             
-            <stop offset="62.5%" stop-color="#efbd57" />
+            <stop offset="90.757381258%" stop-color="#852e23" />
             
-            <stop offset="64.0625%" stop-color="#eeb34e" />
+            <stop offset="93.0680359435%" stop-color="#782820" />
             
-            <stop offset="65.625%" stop-color="#eda846" />
+            <stop offset="95.378690629%" stop-color="#6b211c" />
             
-            <stop offset="67.1875%" stop-color="#eb9e3f" />
-            
-            <stop offset="68.75%" stop-color="#e9933a" />
-            
-            <stop offset="70.3125%" stop-color="#e78836" />
-            
-            <stop offset="71.875%" stop-color="#e27f35" />
-            
-            <stop offset="73.4375%" stop-color="#dc7733" />
-            
-            <stop offset="75.0%" stop-color="#d56f32" />
-            
-            <stop offset="76.5625%" stop-color="#ce6831" />
-            
-            <stop offset="78.125%" stop-color="#c7602f" />
-            
-            <stop offset="79.6875%" stop-color="#c0592e" />
-            
-            <stop offset="81.25%" stop-color="#b9512d" />
-            
-            <stop offset="82.8125%" stop-color="#b14a2c" />
-            
-            <stop offset="84.375%" stop-color="#aa432b" />
-            
-            <stop offset="85.9375%" stop-color="#a23c2a" />
-            
-            <stop offset="87.5%" stop-color="#993828" />
-            
-            <stop offset="89.0625%" stop-color="#903326" />
-            
-            <stop offset="90.625%" stop-color="#872f24" />
-            
-            <stop offset="92.1875%" stop-color="#7e2a22" />
-            
-            <stop offset="93.75%" stop-color="#75261f" />
-            
-            <stop offset="95.3125%" stop-color="#6c221d" />
-            
-            <stop offset="96.875%" stop-color="#631e1a" />
-            
-            <stop offset="98.4375%" stop-color="#5b1a18" />
+            <stop offset="97.6893453145%" stop-color="#5e1c19" />
             
             <stop offset="100.0%" stop-color="#521615" />
             
