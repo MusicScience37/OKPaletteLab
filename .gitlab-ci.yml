@@ -13,14 +13,15 @@ pre-commit:
   image: musicscience37/pipenv:noble
   variables:
     POETRY_CACHE_DIR: ${CI_PROJECT_DIR}/.poetry-cache
+    PYTHON_VERSION: 3.13
   script:
     - poetry config virtualenvs.in-project true
-    - poetry env use 3.13
+    - poetry env use $PYTHON_VERSION
     - poetry install
     - poetry run pre-commit run --all-files
   cache:
     - key:
-        prefix: poetry-linux
+        prefix: poetry-linux-$PYTHON_VERSION
         files:
           - poetry.lock
       paths:
@@ -46,21 +47,52 @@ spell check:
       "**/*.bash"
   interruptible: true
 
+test:
+  stage: test
+  needs: []
+  image: musicscience37/pipenv:noble
+  variables:
+    POETRY_CACHE_DIR: ${CI_PROJECT_DIR}/.poetry-cache
+  parallel:
+    matrix:
+      - PYTHON_VERSION:
+          - "3.12"
+          - "3.13"
+  script:
+    - poetry config virtualenvs.in-project true
+    - poetry env use $PYTHON_VERSION
+    - poetry install
+    - poetry run playwright install --only-shell --with-deps chromium
+    - poetry run plotly_get_chrome -y
+    - poetry run pytest tests
+  cache:
+    - key:
+        prefix: poetry-linux-$PYTHON_VERSION
+        files:
+          - poetry.lock
+      paths:
+        - .poetry-cache
+  artifacts:
+    paths:
+      - tests/**/*.png
+  interruptible: true
+
 build document:
   stage: test
   needs: []
   image: musicscience37/pipenv:noble
   variables:
     POETRY_CACHE_DIR: ${CI_PROJECT_DIR}/.poetry-cache
+    PYTHON_VERSION: 3.13
   script:
     - poetry config virtualenvs.in-project true
-    - poetry env use 3.13
+    - poetry env use $PYTHON_VERSION
     - poetry install
     - ./docs/update_apidoc.sh
     - poetry run sphinx-build -b html -W -q docs/source docs/build  --doctree-dir docs/doctrees
   cache:
     - key:
-        prefix: poetry-linux
+        prefix: poetry-linux-$PYTHON_VERSION
         files:
           - poetry.lock
       paths:
