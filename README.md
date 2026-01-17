@@ -13,6 +13,7 @@ Smooth color maps using Oklch color space. (Currently prototyping...)
 Documentation is available at:
 
 - [main branch](https://okpalettelab.musicscience37.com/)
+- [v0.1.0](https://okpalettelab.musicscience37.com/v0.1.0/)
 - [v0.1.0a4](https://okpalettelab.musicscience37.com/v0.1.0a4/)
 
 ## License
