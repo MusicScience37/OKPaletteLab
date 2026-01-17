@@ -30,6 +30,7 @@ repository = "https://gitlab.com/MusicScience37Projects/utility-libraries/OKPale
 
 [project.optional-dependencies]
 plotly = ["plotly>=6"]
+matplotlib = ["matplotlib>=3"]
 
 [dependency-groups]
 tools = [
@@ -53,6 +54,11 @@ doc = [
     "toml (>=0.10.2,<0.11.0)",
     "scipy (>=1.17.0,<2.0.0)",
     "matplotlib (>=3.10.8,<4.0.0)",
+]
+test = [
+    "pytest (>=9.0.2,<10.0.0)",
+    "kaleido (>=1.2.0,<2.0.0)",
+    "playwright (>=1.57.0,<2.0.0)",
 ]
 dev = [
     "black (>=25.12.0,<26.0.0)",
