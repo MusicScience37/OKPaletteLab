@@ -73,10 +73,8 @@ test:
       paths:
         - .poetry-cache
   artifacts:
-    reports:
-      junit: junit.xml
     paths:
-      - coverage.xml
+      - tests/**/*.png
   interruptible: true
 
 build document:
