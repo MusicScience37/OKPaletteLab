@@ -62,6 +62,8 @@ test:
     - poetry config virtualenvs.in-project true
     - poetry env use $PYTHON_VERSION
     - poetry install
+    - poetry run playwright install --only-shell --with-deps chromium
+    - poetry run plotly_get_chrome -y
     - poetry run pytest tests
   cache:
     - key:
