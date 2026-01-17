@@ -42,7 +42,7 @@ figure.add_heatmap(
 figure.show()
 ```
 
-## Example to Change the Order of Colors
+## Example to Reverse the Order of Colors
 
 ```{code-cell}
 import numpy

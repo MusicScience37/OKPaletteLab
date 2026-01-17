@@ -6,3 +6,4 @@ How to
 
    install
    plotly/index
+   matplotlib/index
