@@ -4,7 +4,7 @@ file_format: mystnb
 
 # Use in Heatmap of Plotly
 
-This page shows how to use a color map from OkPaletteLab library in a heatmap created with Plotly.
+This page shows how to use a color map from OKPaletteLab library in a heatmap created with Plotly.
 
 ```{code-cell}
 :tags: ["remove-input"]
@@ -42,7 +42,7 @@ figure.add_heatmap(
 figure.show()
 ```
 
-## Example to Change the Order of Colors
+## Example to Reverse the Order of Colors
 
 ```{code-cell}
 import numpy

@@ -1,1 +1,1 @@
-"""Development tools for OkPaletteLab project."""
+"""Development tools for OKPaletteLab project."""
