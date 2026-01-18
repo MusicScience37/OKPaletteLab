@@ -4,7 +4,7 @@ file_format: mystnb
 
 # Samples of Gaussian (Positive Values)
 
-This page show some samples of figures using Gaussian function as follows:
+This page shows some samples of figures using Gaussian function as follows:
 
 ```{math}
 z = e^{-((x+1)^2 + (y-1)^2)/2} + 0.3 e^{-((x-1)^2 + (y+1)^2)/2}

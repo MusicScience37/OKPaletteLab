@@ -38,3 +38,14 @@ def get_diverging_color_map_names() -> list[str]:
         "blue_red_light_wide",
         "rainbow",
     ]
+
+
+def get_cyclic_color_map_names() -> list[str]:
+    """Get a list of cyclic color map names.
+
+    Returns:
+        A list of cyclic color map names.
+    """
+    return [
+        "equal_hue",
+    ]

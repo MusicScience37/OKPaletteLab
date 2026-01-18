@@ -389,3 +389,15 @@ color_maps:
           - [0.6, 0.15, 0.121]
           - [0.5, 0.17, 0.05]
         num_interpolated_points: 20
+
+  ##########################################################
+  # Cyclic color maps
+  ##########################################################
+  - name: equal_hue
+    description: A cyclic color map whose color changes only in hue.
+    segments:
+      - type: linear_hue
+        colors:
+          - [0.71, 0.12, 0.05]
+          - [0.71, 0.12, 1.05]
+        num_interpolated_points: 65

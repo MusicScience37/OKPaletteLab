@@ -7,4 +7,5 @@ gaussian
 peaks
 perlin_noise
 spiral_pattern
+arctan_2d
 ```

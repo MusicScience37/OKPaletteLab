@@ -45,3 +45,20 @@ figure = plot_color_maps(
 figure.update_layout(height=900)
 figure.show()
 ```
+
+## Cyclic Color Maps for Circular Ranges
+
+```{code-cell}
+:tags: ["remove-input"]
+from ok_palette_lab_tools.docs.color_maps import plot_color_maps
+from ok_palette_lab_tools.color_maps.color_map_names import (
+    get_cyclic_color_map_names,
+)
+
+figure = plot_color_maps(
+    color_map_names=get_cyclic_color_map_names(),
+    z_range=(0.0, 1.0),
+)
+figure.update_layout(height=250)
+figure.show()
+```
