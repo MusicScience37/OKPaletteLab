@@ -1,6 +1,6 @@
 # OKPaletteLab
 
-Smooth color maps using Oklch color space.
+Smooth color maps using Oklch color space for Plotly and matplotlib.
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ok-palette-lab)
 [![PyPI - Version](https://img.shields.io/pypi/v/ok-palette-lab)](https://pypi.org/project/ok-palette-lab/)
@@ -13,6 +13,7 @@ Smooth color maps using Oklch color space.
 Documentation is available at:
 
 - [main branch](https://okpalettelab.musicscience37.com/)
+- [v0.2.0](https://okpalettelab.musicscience37.com/v0.2.0/)
 - [v0.1.0](https://okpalettelab.musicscience37.com/v0.1.0/)
 
 ## Repositories
