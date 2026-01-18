@@ -12,6 +12,8 @@ def get_general_color_map_names() -> list[str]:
         "autumn_wide",
         "ocean",
         "ocean_wide",
+        "forest",
+        "forest_wide",
         "red",
         "red_wide",
         "purple_green_yellow",
@@ -34,4 +36,16 @@ def get_diverging_color_map_names() -> list[str]:
         "blue_red_white_wide",
         "blue_red_light",
         "blue_red_light_wide",
+        "rainbow",
+    ]
+
+
+def get_cyclic_color_map_names() -> list[str]:
+    """Get a list of cyclic color map names.
+
+    Returns:
+        A list of cyclic color map names.
+    """
+    return [
+        "equal_hue",
     ]

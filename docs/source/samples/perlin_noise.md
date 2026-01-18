@@ -71,7 +71,7 @@ figure = plot_perlin_noise(
 )
 figure.update_layout({
     "title": "Perlin Noise with General Color Maps",
-    "height": 1300,
+    "height": 1600,
 })
 figure.show()
 ```
@@ -91,7 +91,7 @@ figure = plot_perlin_noise(
 )
 figure.update_layout({
     "title": "Perlin Noise with Diverging Color Maps",
-    "height": 1300,
+    "height": 1600,
 })
 figure.show()
 ```

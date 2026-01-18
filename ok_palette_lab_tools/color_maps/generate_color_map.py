@@ -144,6 +144,43 @@ def _handle_diverging_light(
     return list(zip(positions_interp, _lch_to_hex_rgb(lch_interp)))
 
 
+def _handle_linear_hue(
+    segment: ColorMapSegmentDef, first_position: float
+) -> list[tuple[float, str]]:
+    """Handle a segment of linear hue.
+
+    Args:
+        segment (ColorMapSegmentDef): Definition of the color map segment.
+        first_position (float): The starting position for this segment.
+
+    Returns:
+        list[tuple[float, str]]: List of (position, hex color) tuples.
+    """
+    lch_colors = segment.colors
+    l_values = numpy.array([lch[0] for lch in lch_colors])
+    c_values = numpy.array([lch[1] for lch in lch_colors])
+    h_values = numpy.array([lch[2] for lch in lch_colors])
+
+    position = first_position
+    positions_as_list = [position]
+    for i in range(len(lch_colors) - 1):
+        position += abs(h_values[i + 1] - h_values[i])
+        positions_as_list.append(position)
+    positions = numpy.array(positions_as_list)
+
+    positions_interp = numpy.linspace(
+        positions[0], positions[-1], segment.num_interpolated_points
+    )
+
+    l_interp = numpy.interp(positions_interp, positions, l_values)
+    c_interp = numpy.interp(positions_interp, positions, c_values)
+    h_interp = numpy.interp(positions_interp, positions, h_values)
+
+    lch_interp = numpy.stack([l_interp, c_interp, h_interp], axis=1)
+
+    return list(zip(positions_interp, _lch_to_hex_rgb(lch_interp)))
+
+
 def generate_color_map(definition: ColorMapDef) -> ColorMap:
     """Generate a color map from its definition.
 
@@ -160,6 +197,8 @@ def generate_color_map(definition: ColorMapDef) -> ColorMap:
             segment_colors = _handle_linear_lightness(segment, last_position)
         elif segment.type == "diverging_light":
             segment_colors = _handle_diverging_light(segment, last_position)
+        elif segment.type == "linear_hue":
+            segment_colors = _handle_linear_hue(segment, last_position)
         else:
             raise ValueError(f"Unknown segment type: {segment.type}")
 

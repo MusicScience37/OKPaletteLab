@@ -75,7 +75,7 @@ figure = plot_spiral_pattern(
 )
 figure.update_layout({
     "title": "Spiral Pattern with Diverging Color Maps",
-    "height": 1300,
+    "height": 1600,
 })
 figure.show()
 ```
