@@ -1,7 +1,7 @@
 OKPaletteLab
 ===============
 
-Smooth color maps using Oklch color space.
+Smooth color maps using Oklch color space for Plotly and matplotlib.
 
 Table of Contents
 --------------------
