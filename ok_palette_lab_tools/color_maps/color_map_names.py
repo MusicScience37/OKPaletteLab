@@ -12,6 +12,8 @@ def get_general_color_map_names() -> list[str]:
         "autumn_wide",
         "ocean",
         "ocean_wide",
+        "forest",
+        "forest_wide",
         "red",
         "red_wide",
         "purple_green_yellow",

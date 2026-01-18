@@ -70,7 +70,7 @@ figure = plot_gaussian(
 )
 figure.update_layout({
     "title": "Gaussian Function with General Color Maps",
-    "height": 1300,
+    "height": 1600,
 })
 figure.show()
 ```

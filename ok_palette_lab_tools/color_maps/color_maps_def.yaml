@@ -53,6 +53,32 @@ color_maps:
           - [1.0, 0.0, 0.5]
         num_interpolated_points: 20
 
+  - name: forest
+    description: A color map of greens.
+    segments:
+      - type: linear_lightness
+        colors:
+          - [0.25, 0.04, 0.53]
+          - [0.3, 0.04, 0.52]
+          - [0.5, 0.1, 0.45]
+          - [0.7, 0.13, 0.38]
+          - [0.9, 0.1, 0.32]
+          - [0.95, 0.05, 0.3]
+        num_interpolated_points: 20
+
+  - name: forest_wide
+    description: A color map of greens with wider range of lightness.
+    segments:
+      - type: linear_lightness
+        colors:
+          - [0.2, 0.02, 0.55]
+          - [0.3, 0.04, 0.52]
+          - [0.5, 0.1, 0.45]
+          - [0.7, 0.13, 0.38]
+          - [0.9, 0.1, 0.32]
+          - [1.0, 0.0, 0.29]
+        num_interpolated_points: 20
+
   - name: red
     description: A color map of reds.
     segments:
