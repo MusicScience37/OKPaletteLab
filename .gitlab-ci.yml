@@ -58,6 +58,7 @@ test:
       - PYTHON_VERSION:
           - "3.12"
           - "3.13"
+          - "3.14"
   script:
     - poetry config virtualenvs.in-project true
     - poetry env use $PYTHON_VERSION
