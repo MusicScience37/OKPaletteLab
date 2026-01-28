@@ -21,6 +21,7 @@
     "endfor",
     "getattr",
     "imshow",
+    "Inkscape",
     "interp",
     "interruptible",
     "ipykernel",

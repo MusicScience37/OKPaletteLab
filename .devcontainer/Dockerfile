@@ -10,6 +10,8 @@ RUN apt-get update && \
     gnupg2 \
     vim nano \
     sudo \
+    # For icon conversion
+    imagemagick \
     # For configuration of locale
     locales \
     && \
