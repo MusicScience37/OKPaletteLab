@@ -1,8 +1,8 @@
 # OKPaletteLab
 
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ok-palette-lab)
-[![PyPI - Version](https://img.shields.io/pypi/v/ok-palette-lab)](https://pypi.org/project/ok-palette-lab/)
-![PyPI - License](https://img.shields.io/pypi/l/ok-palette-lab)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ok_palette_lab)
+[![PyPI - Version](https://img.shields.io/pypi/v/ok_palette_lab)](https://pypi.org/project/ok_palette_lab/)
+![PyPI - License](https://img.shields.io/pypi/l/ok_palette_lab)
 ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline-status/MusicScience37Projects%2Futility-libraries%2FOKPaletteLab?branch=main)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
@@ -78,7 +78,7 @@ Documentation is available at:
 
 ## Development
 
-This project has been created recently, and is under active development.
+This project has been created January, 2026, and is under active development.
 Following features are planned for future releases:
 
 - Color maps for dark mode.
@@ -93,6 +93,6 @@ Following features are planned for future releases:
 ## License
 
 This project is licensed under the MIT License.
-See [License.txt](License.txt) for details.
+See [LICENSE.txt](LICENSE.txt) for details.
 
 Graphics created using color maps in this project can be used freely without any restrictions.
