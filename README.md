@@ -8,6 +8,10 @@ Smooth color maps using Oklch color space for Plotly and matplotlib.
 ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline-status/MusicScience37Projects%2Futility-libraries%2FOKPaletteLab?branch=main)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
+## Sample Figures
+
+![Sample figure](docs/images/combined.png)
+
 ## Documentation
 
 Documentation is available at:
