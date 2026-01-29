@@ -1,5 +1,7 @@
 # OKPaletteLab
 
+![Icon](docs/icon/icon_for_docs.svg)
+
 Smooth color maps using Oklch color space for Plotly and matplotlib.
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ok-palette-lab)

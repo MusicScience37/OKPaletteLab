@@ -56,7 +56,7 @@ mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"
 
 html_theme = "sphinx_orange_book_theme"
 html_title = project
-html_logo = "../icon/icon.svg"
+html_logo = "../icon/icon_for_docs.svg"
 html_favicon = "../icon/icon.svg"
 html_theme_options = {
     "show_prev_next": False,
