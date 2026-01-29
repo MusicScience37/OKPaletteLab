@@ -44,7 +44,7 @@ pip install ok_palette_lab
         # ... your data here ...
 
         # Specify a color map.
-        colorscale=ok_palette_lab.plotly.blue_red_light,
+        colorscale=ok_palette_lab.plotly.autumn,
     )
     ```
 
@@ -59,7 +59,7 @@ pip install ok_palette_lab
         # ... your data here ...
 
         # Specify a color map.
-        cmap=ok_palette_lab.matplotlib.blue_red_light,
+        cmap=ok_palette_lab.matplotlib.autumn,
     )
     ```
 
