@@ -61,3 +61,7 @@ heatmap = axes.imshow(
 figure.colorbar(heatmap)
 matplotlib.pyplot.show()
 ```
+
+## Next Steps
+
+- See [Color Maps](../../color_maps.md) for other color maps available in OKPaletteLab.

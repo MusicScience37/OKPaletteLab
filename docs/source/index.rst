@@ -3,6 +3,9 @@ OKPaletteLab
 
 Smooth color maps using Oklch color space for Plotly and matplotlib.
 
+.. image:: ../images/combined.png
+   :alt: Sample figures
+
 Table of Contents
 --------------------
 

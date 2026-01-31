@@ -3,8 +3,9 @@
 ## Generation of Icon Files
 
 1. Execute Python script `ok_palette_lab_tools/icon/generate_icon.py`
-   to generate `docs/icon/design/icon_generated.svg`.
-2. Open `docs/icon/design/icon_generated.svg` using Inkscape and
-   export `docs/icon/icon.svg` (optimized SVG) and `docs/icon/icon1024.png` (PNG in 1024x1024 pixels).
+   to generate `docs/icon/design/icon.svg`.
+2. Open `docs/icon/design/icon.svg` using Inkscape and export the following files:
+   - `docs/icon/icon.svg` (optimized SVG)
+   - `docs/icon/icon1024.png` (PNG in 1024x1024 pixels)
 3. Execute Python script `ok_palette_lab_tools/icon/convert_icon.py`
    to generate some other files.

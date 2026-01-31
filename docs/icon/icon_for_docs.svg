@@ -1,4 +1,4 @@
-<svg width="32" height="32" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<svg width="128" height="128" version="1.1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
  <defs>
   <linearGradient id="grad_main" y1="100%">
    <stop stop-color="#27245e" offset="0"/>
@@ -48,6 +48,5 @@
    <stop stop-color="#521615" offset="1"/>
   </linearGradient>
  </defs>
- <rect width="32" height="32" fill="#fbebe3"/>
- <rect x="5" y="5" width="22" height="22" rx="2" ry="2" fill="url(#grad_main)"/>
+ <rect x="5" y="5" width="118" height="118" rx="8" ry="8" fill="url(#grad_main)"/>
 </svg>
