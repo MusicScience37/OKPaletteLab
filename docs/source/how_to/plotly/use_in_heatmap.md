@@ -12,11 +12,19 @@ This page shows how to use a color map from OKPaletteLab library in a heatmap cr
 # Required to show figures.
 import plotly.io
 plotly.io.renderers.default = "notebook_connected"
+
+# Change default template
+plotly.io.templates.default = "plotly_white"
 ```
 
 ## Example of Heatmap
 
 ```{code-cell}
+---
+mystnb:
+  figure:
+    classes: only-light
+---
 import numpy
 import plotly.graph_objects
 
@@ -39,6 +47,21 @@ figure.add_heatmap(
     zsmooth="best",
 )
 
+figure.update_layout(
+    yaxis=dict(scaleanchor="x", scaleratio=1),
+)
+figure.show()
+```
+
+```{code-cell}
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-dark
+---
+
+figure.update_layout(template="plotly_dark")
 figure.show()
 ```
 
