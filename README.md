@@ -8,16 +8,16 @@
 
 ![Icon](docs/icon/icon_for_docs.svg)
 
-Smooth color maps for Plotly and matplotlib.
+Smooth color maps for Plotly and Matplotlib.
 
-- Color maps are designed to be smooth using Oklch color space for better visualization of data.
-- Following types of color maps are provided:
+- Color maps are designed in the Oklch color space to create smooth gradients and improve data visualization.
+- The following types of color maps are provided:
   - **Sequential** color maps for general ranges.
   - **Diverging** color maps for ranges centered at zero.
   - **Cyclic** color maps for periodic ranges.
-- Currently supports following libraries:
+- Currently supports the following libraries:
   - [Plotly (graphing library for Python)](https://plotly.com/python/)
-  - [matplotlib](https://matplotlib.org/)
+  - [Matplotlib](https://matplotlib.org/)
 
 ## Sample Figures
 
@@ -35,8 +35,8 @@ pip install ok_palette_lab
 
 - With Plotly:
   - [`ok_palette_lab.plotly` package](https://okpalettelab.musicscience37.com/api/ok_palette_lab.plotly.html)
-    has color maps (called "color scales" in Plotly).
-  - Select one and use as follows:
+    provides color maps (called "color scales" in Plotly).
+  - Select one and use it as follows:
 
     ```python
     figure = plotly.graph_objects.Figure()
@@ -51,7 +51,7 @@ pip install ok_palette_lab
 - With matplotlib:
   - [`ok_palette_lab.matplotlib` package](https://okpalettelab.musicscience37.com/api/ok_palette_lab.matplotlib.html)
     has color maps.
-  - Select one and use as follows:
+  - Select one and use it as follows:
 
     ```python
     figure, axes = matplotlib.pyplot.subplots()
@@ -78,8 +78,8 @@ Documentation is available at:
 
 ## Development
 
-This project has been created January, 2026, and is under active development.
-Following features are planned for future releases:
+This project was created in January 2026 and is under active development.
+The following features are planned for future releases:
 
 - Color maps for dark mode.
 - Support for more graphing libraries in Python.
@@ -87,12 +87,12 @@ Following features are planned for future releases:
 
 ## Repositories
 
-- [Main in GitLab](https://gitlab.com/MusicScience37Projects/utility-libraries/OKPaletteLab)
-- [Mirror in GitHub](https://github.com/MusicScience37/OKPaletteLab)
+- [Main repository on GitLab](https://gitlab.com/MusicScience37Projects/utility-libraries/OKPaletteLab)
+- [Mirror on GitHub](https://github.com/MusicScience37/OKPaletteLab)
 
 ## License
 
 This project is licensed under the MIT License.
 See [LICENSE.txt](LICENSE.txt) for details.
 
-Graphics created using color maps in this project can be used freely without any restrictions.
+Graphics created using the color maps in this project can be used freely without restriction.
