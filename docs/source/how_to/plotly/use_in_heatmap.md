@@ -71,3 +71,7 @@ figure.add_heatmap(
 
 figure.show()
 ```
+
+## Next Steps
+
+- See [Color Maps](../../color_maps.md) for other color maps available in OKPaletteLab.
