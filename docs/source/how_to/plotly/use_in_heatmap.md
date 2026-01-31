@@ -47,9 +47,6 @@ figure.add_heatmap(
     zsmooth="best",
 )
 
-figure.update_layout(
-    yaxis=dict(scaleanchor="x", scaleratio=1),
-)
 figure.show()
 ```
 
@@ -60,7 +57,6 @@ mystnb:
   figure:
     classes: only-dark
 ---
-
 figure.update_layout(template="plotly_dark")
 figure.show()
 ```
@@ -68,6 +64,11 @@ figure.show()
 ## Example to Reverse the Order of Colors
 
 ```{code-cell}
+---
+mystnb:
+  figure:
+    classes: only-light
+---
 import numpy
 import plotly.graph_objects
 
@@ -92,6 +93,17 @@ figure.add_heatmap(
     zsmooth="best",
 )
 
+figure.show()
+```
+
+```{code-cell}
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-dark
+---
+figure.update_layout(template="plotly_dark")
 figure.show()
 ```
 
