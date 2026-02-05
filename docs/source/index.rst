@@ -5,6 +5,11 @@ Smooth color maps using Oklch color space for Plotly and matplotlib.
 
 .. image:: ../images/combined.png
    :alt: Sample figures
+   :class: only-light
+
+.. image:: ../images/combined_dark.png
+   :alt: Sample figures
+   :class: only-dark
 
 Table of Contents
 --------------------
