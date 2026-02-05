@@ -9,8 +9,8 @@ def generate_peaks_data() -> tuple[numpy.ndarray, numpy.ndarray, numpy.ndarray]:
     Returns:
         tuple[numpy.ndarray, numpy.ndarray, numpy.ndarray]: x, y, z data.
     """
-    x = numpy.linspace(-3.0, 3.0, 301)
-    y = numpy.linspace(-3.0, 3.0, 301)
+    x = numpy.linspace(-3.0, 3.0, 101)
+    y = numpy.linspace(-3.0, 3.0, 101)
     x_grid, y_grid = numpy.meshgrid(x, y)
     z = (
         3 * (1 - x_grid) ** 2 * numpy.exp(-(x_grid**2) - (y_grid + 1) ** 2)

@@ -9,8 +9,8 @@ def generate_arctan_2d_data() -> tuple[numpy.ndarray, numpy.ndarray, numpy.ndarr
     Returns:
         tuple[numpy.ndarray, numpy.ndarray, numpy.ndarray]: x, y, z data.
     """
-    x = numpy.linspace(-1.0, 1.0, 200)
-    y = numpy.linspace(-1.0, 1.0, 200)
+    x = numpy.linspace(-1.0, 1.0, 100)
+    y = numpy.linspace(-1.0, 1.0, 100)
     x_grid, y_grid = numpy.meshgrid(x, y)
 
     z = numpy.arctan2(y_grid, x_grid)

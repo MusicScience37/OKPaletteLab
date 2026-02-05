@@ -108,6 +108,7 @@ def create_perlin_noise(
         x=x,
         y=y,
         colorscale=color_map,
+        zsmooth="best",
         zmid=0,
     )
     figure.update_layout(

@@ -1,0 +1,17 @@
+/* This file overrides design of sphinx-book-theme for better visualization. */
+
+/* Remove background of cell outputs in dark mode */
+html[data-theme="dark"]
+  .bd-content
+  div.cell_output
+  .text_html:not(:has(table.dataframe)),
+html[data-theme="dark"] .bd-content div.cell_output .widget-subarea,
+html[data-theme="dark"] .bd-content div.cell_output img {
+  background-color: transparent;
+  padding: 0;
+}
+/* Remove unnecessary padding around figures */
+div.figure,
+figure {
+  padding: 0;
+}

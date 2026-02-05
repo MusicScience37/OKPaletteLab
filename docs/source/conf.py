@@ -69,4 +69,7 @@ html_theme_options = {
     "use_repository_button": True,
 }
 
-html_static_path: list[str] = []
+html_static_path: list[str] = ["_static"]
+html_css_files = [
+    "ok_palette_lab_custom.css",
+]

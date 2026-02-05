@@ -12,6 +12,9 @@ This page shows some samples of figures using arctan function in 2D.
 # Required to show figures.
 import plotly.io
 plotly.io.renderers.default = "notebook_connected"
+
+# Change default template
+plotly.io.templates.default = "plotly_white"
 ```
 
 ```{code-cell}
@@ -23,6 +26,11 @@ from ok_palette_lab_tools.test_data.arctan_2d import generate_arctan_2d_data
 ## Example of Plotting a Heatmap
 
 ```{code-cell}
+---
+mystnb:
+  figure:
+    classes: only-light
+---
 import plotly.graph_objects
 import ok_palette_lab.plotly
 
@@ -48,5 +56,16 @@ figure.update_layout(
     },
 )
 
+figure.show()
+```
+
+```{code-cell}
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-dark
+---
+figure.update_layout(template="plotly_dark")
 figure.show()
 ```
