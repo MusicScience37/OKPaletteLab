@@ -18,6 +18,9 @@ z = e^{-r^2} \sin(3 \theta + 10 r)
 # Required to show figures.
 import plotly.io
 plotly.io.renderers.default = "notebook_connected"
+
+# Change default template
+plotly.io.templates.default = "plotly_white"
 ```
 
 ```{code-cell}
@@ -29,6 +32,11 @@ from ok_palette_lab_tools.test_data.spiral_pattern import generate_spiral_patter
 ## Example of Plotting a Heatmap
 
 ```{code-cell}
+---
+mystnb:
+  figure:
+    classes: only-light
+---
 import plotly.graph_objects
 import ok_palette_lab.plotly
 
@@ -58,10 +66,26 @@ figure.update_layout(
 figure.show()
 ```
 
+```{code-cell}
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-dark
+---
+figure.update_layout(template="plotly_dark")
+figure.show()
+```
+
 ## Other Color Maps
 
 ```{code-cell}
-:tags: ["remove-input"]
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-light
+---
 
 from ok_palette_lab_tools.color_maps.color_map_names import (
     get_diverging_color_map_names,
@@ -77,5 +101,16 @@ figure.update_layout({
     "title": "Spiral Pattern with Diverging Color Maps",
     "height": 1600,
 })
+figure.show()
+```
+
+```{code-cell}
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-dark
+---
+figure.update_layout(template="plotly_dark")
 figure.show()
 ```

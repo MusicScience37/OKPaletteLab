@@ -16,6 +16,9 @@ z = e^{-((x+1)^2 + (y-1)^2)/2} + 0.3 e^{-((x-1)^2 + (y+1)^2)/2}
 # Required to show figures.
 import plotly.io
 plotly.io.renderers.default = "notebook_connected"
+
+# Change default template
+plotly.io.templates.default = "plotly_white"
 ```
 
 ```{code-cell}
@@ -27,6 +30,11 @@ from ok_palette_lab_tools.test_data.gaussian import generate_positive_gaussian_d
 ## Example of Plotting a Heatmap
 
 ```{code-cell}
+---
+mystnb:
+  figure:
+    classes: only-light
+---
 import plotly.graph_objects
 import ok_palette_lab.plotly
 
@@ -54,10 +62,26 @@ figure.update_layout(
 figure.show()
 ```
 
+```{code-cell}
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-dark
+---
+figure.update_layout(template="plotly_dark")
+figure.show()
+```
+
 ## Other Color Maps
 
 ```{code-cell}
-:tags: ["remove-input"]
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-light
+---
 
 from ok_palette_lab_tools.color_maps.color_map_names import (
     get_general_color_map_names,
@@ -72,5 +96,16 @@ figure.update_layout({
     "title": "Gaussian Function with General Color Maps",
     "height": 1600,
 })
+figure.show()
+```
+
+```{code-cell}
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-dark
+---
+figure.update_layout(template="plotly_dark")
 figure.show()
 ```
