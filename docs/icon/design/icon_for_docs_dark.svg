@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+    <defs>
+        <linearGradient id="grad_main" x1="0%" y1="100%" x2="100%" y2="0%">
+            
+            <stop offset="0.0%" stop-color="#bdffed" />
+            
+            <stop offset="2.29088345865%" stop-color="#9bf7ea" />
+            
+            <stop offset="4.58176691729%" stop-color="#80eee8" />
+            
+            <stop offset="6.87265037594%" stop-color="#6ee2e6" />
+            
+            <stop offset="9.16353383459%" stop-color="#5ed6e4" />
+            
+            <stop offset="11.4544172932%" stop-color="#4fcae2" />
+            
+            <stop offset="13.7453007519%" stop-color="#44bddf" />
+            
+            <stop offset="16.0361842105%" stop-color="#3db0dc" />
+            
+            <stop offset="18.3270676692%" stop-color="#3aa2d8" />
+            
+            <stop offset="20.6179511278%" stop-color="#3b94d3" />
+            
+            <stop offset="22.9088345865%" stop-color="#3e86cd" />
+            
+            <stop offset="25.1997180451%" stop-color="#4578c3" />
+            
+            <stop offset="27.4906015038%" stop-color="#4a6bb8" />
+            
+            <stop offset="29.7814849624%" stop-color="#4d5dac" />
+            
+            <stop offset="32.0723684211%" stop-color="#4f509e" />
+            
+            <stop offset="34.3632518797%" stop-color="#4f4490" />
+            
+            <stop offset="36.6541353383%" stop-color="#4e3781" />
+            
+            <stop offset="38.945018797%" stop-color="#4b2d70" />
+            
+            <stop offset="41.2359022556%" stop-color="#47235f" />
+            
+            <stop offset="43.5267857143%" stop-color="#41194e" />
+            
+            <stop offset="45.6845238095%" stop-color="#38153f" />
+            
+            <stop offset="47.8422619048%" stop-color="#2f1232" />
+            
+            <stop offset="50.0%" stop-color="#231521" />
+            
+            <stop offset="52.1577380952%" stop-color="#340f2b" />
+            
+            <stop offset="54.3154761905%" stop-color="#401132" />
+            
+            <stop offset="56.4732142857%" stop-color="#4e1238" />
+            
+            <stop offset="58.7640977444%" stop-color="#5c183c" />
+            
+            <stop offset="61.054981203%" stop-color="#6b1e3f" />
+            
+            <stop offset="63.3458646617%" stop-color="#7a2541" />
+            
+            <stop offset="65.6367481203%" stop-color="#872e42" />
+            
+            <stop offset="67.9276315789%" stop-color="#943842" />
+            
+            <stop offset="70.2185150376%" stop-color="#a04242" />
+            
+            <stop offset="72.5093984962%" stop-color="#ac4d42" />
+            
+            <stop offset="74.8002819549%" stop-color="#b75841" />
+            
+            <stop offset="77.0911654135%" stop-color="#c26541" />
+            
+            <stop offset="79.3820488722%" stop-color="#ca7244" />
+            
+            <stop offset="81.6729323308%" stop-color="#d18049" />
+            
+            <stop offset="83.9638157895%" stop-color="#d88e50" />
+            
+            <stop offset="86.2546992481%" stop-color="#de9d58" />
+            
+            <stop offset="88.5455827068%" stop-color="#e4ab62" />
+            
+            <stop offset="90.8364661654%" stop-color="#e9b96d" />
+            
+            <stop offset="93.1273496241%" stop-color="#edc77a" />
+            
+            <stop offset="95.4182330827%" stop-color="#f2d688" />
+            
+            <stop offset="97.7091165414%" stop-color="#f4e49e" />
+            
+            <stop offset="100.0%" stop-color="#f7f1bb" />
+            
+        </linearGradient>
+    </defs>
+
+    
+    <rect x="5" y="5" width="118" height="118"
+        rx="8" ry="8" fill="url(#grad_main)" />
+</svg>
