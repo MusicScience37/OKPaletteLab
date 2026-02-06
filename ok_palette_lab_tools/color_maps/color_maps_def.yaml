@@ -390,7 +390,7 @@ color_maps:
           - [0.3, 0.1, 0.915]
           - [0.33, 0.11, 0.96]
           - [0.4, 0.12, 1.01]
-        width: 0.24
+        width: 0.1
         power: 1.3
         num_interpolated_points: 7
       - type: linear_lightness
@@ -417,12 +417,12 @@ color_maps:
       - type: diverging_light
         colors:
           - [0.3, 0.1, 0.88]
-          - [0.27, 0.08, 0.9]
-          - [0.26, 0.06, 0.92]
-          - [0.27, 0.08, 0.94]
+          - [0.24, 0.07, 0.9]
+          - [0.22, 0.03, 0.92]
+          - [0.24, 0.07, 0.94]
           - [0.3, 0.1, 0.96]
         width: 0.1
-        power: 1.4
+        power: 1.2
         num_interpolated_points: 7
       - type: linear_lightness
         colors:
