@@ -372,6 +372,68 @@ color_maps:
           - [0.2, 0.07, 0.0]
         num_interpolated_points: 20
 
+  - name: blue_orange_dark
+    description: A color map of blue, dark purple, and orange.
+    segments:
+      - type: linear_lightness
+        colors:
+          - [0.9, 0.1, 0.52]
+          - [0.85, 0.1, 0.55]
+          - [0.8, 0.11, 0.58]
+          - [0.6, 0.13, 0.7]
+          - [0.4, 0.12, 0.82]
+        num_interpolated_points: 20
+      - type: diverging_light
+        colors:
+          - [0.4, 0.12, 0.82]
+          - [0.33, 0.11, 0.87]
+          - [0.3, 0.1, 0.915]
+          - [0.33, 0.11, 0.96]
+          - [0.4, 0.12, 1.01]
+        width: 0.24
+        power: 1.3
+        num_interpolated_points: 7
+      - type: linear_lightness
+        colors:
+          - [0.4, 0.12, 0.01]
+          - [0.6, 0.13, 0.11]
+          - [0.8, 0.11, 0.21]
+          - [0.85, 0.1, 0.235]
+          - [0.9, 0.1, 0.26]
+        num_interpolated_points: 20
+
+  - name: blue_orange_dark_wide
+    description: A color map of blue, dark purple, and orange with wider range of lightness.
+    segments:
+      - type: linear_lightness
+        colors:
+          - [0.95, 0.07, 0.49]
+          - [0.9, 0.1, 0.52]
+          - [0.8, 0.11, 0.58]
+          - [0.6, 0.13, 0.7]
+          - [0.4, 0.12, 0.82]
+          - [0.3, 0.1, 0.88]
+        num_interpolated_points: 20
+      - type: diverging_light
+        colors:
+          - [0.3, 0.1, 0.88]
+          - [0.27, 0.08, 0.9]
+          - [0.26, 0.06, 0.92]
+          - [0.27, 0.08, 0.94]
+          - [0.3, 0.1, 0.96]
+        width: 0.1
+        power: 1.4
+        num_interpolated_points: 7
+      - type: linear_lightness
+        colors:
+          - [0.3, 0.1, -0.04]
+          - [0.4, 0.12, 0.01]
+          - [0.6, 0.13, 0.11]
+          - [0.8, 0.11, 0.21]
+          - [0.9, 0.1, 0.26]
+          - [0.95, 0.07, 0.285]
+        num_interpolated_points: 20
+
   - name: rainbow
     description: A color scale of blue, green and red.
     segments:
