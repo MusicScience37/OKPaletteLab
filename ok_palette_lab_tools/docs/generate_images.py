@@ -29,16 +29,18 @@ def generate_gaussian_image(*, is_light: bool) -> None:
     if is_light:
         matplotlib.pyplot.style.use("default")
         file_name_suffix = ""
+        color_map = ok_palette_lab.matplotlib.blue_red_light
     else:
         matplotlib.pyplot.style.use("dark_background")
         file_name_suffix = "_dark"
+        color_map = ok_palette_lab.matplotlib.blue_orange_dark_wide
 
     figure, axes = matplotlib.pyplot.subplots()
     heatmap = axes.imshow(
         z,
         extent=(x.min(), x.max(), y.min(), y.max()),
         origin="lower",
-        cmap=ok_palette_lab.matplotlib.blue_red_light,
+        cmap=color_map,
         vmin=-max_abs,
         vmax=max_abs,
         interpolation="bilinear",
@@ -96,16 +98,18 @@ def generate_perlin_noise_image(*, is_light: bool) -> None:
     if is_light:
         matplotlib.pyplot.style.use("default")
         file_name_suffix = ""
+        color_map = ok_palette_lab.matplotlib.blue_brown_light_wide
     else:
         matplotlib.pyplot.style.use("dark_background")
         file_name_suffix = "_dark"
+        color_map = ok_palette_lab.matplotlib.blue_brown_light_wide
 
     figure, axes = matplotlib.pyplot.subplots()
     heatmap = axes.imshow(
         z,
         extent=(x.min(), x.max(), y.min(), y.max()),
         origin="lower",
-        cmap=ok_palette_lab.matplotlib.blue_brown_light,
+        cmap=color_map,
         vmin=-max_abs,
         vmax=max_abs,
         interpolation="bilinear",
