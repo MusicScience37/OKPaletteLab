@@ -14,6 +14,7 @@ Smooth color maps for Plotly and Matplotlib.
 - The following types of color maps are provided:
   - **Sequential** color maps for general ranges.
   - **Diverging** color maps for ranges centered at zero.
+    This project provides diverging color maps for both light and dark modes.
   - **Cyclic** color maps for periodic ranges.
 - Currently supports the following libraries:
   - [Plotly (graphing library for Python)](https://plotly.com/python/)
@@ -21,7 +22,13 @@ Smooth color maps for Plotly and Matplotlib.
 
 ## Sample Figures
 
-![Sample figure](docs/images/combined.png)
+### Sample Figures in Light Mode
+
+![Sample figure in light mode](docs/images/combined.png)
+
+### Sample Figures in Dark Mode
+
+![Sample figure in dark mode](docs/images/combined_dark.png)
 
 ## Installation
 
@@ -78,7 +85,6 @@ Documentation for each version can be viewed using the version switcher at the b
 This project was created in January 2026 and is under active development.
 The following features are planned for future releases:
 
-- Color maps for dark mode.
 - Support for more graphing libraries in Python.
 - Support for ParaView.
 
