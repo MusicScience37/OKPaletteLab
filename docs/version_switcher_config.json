@@ -1,0 +1,17 @@
+[
+  {
+    "name": "main branch",
+    "version": "dev",
+    "url": "https://okpalettelab.musicscience37.com/"
+  },
+  {
+    "name": "v0.2.0 (latest)",
+    "version": "0.2.0",
+    "url": "https://okpalettelab.musicscience37.com/v0.2.0/"
+  },
+  {
+    "name": "v0.1.0",
+    "version": "0.1.0",
+    "url": "https://okpalettelab.musicscience37.com/v0.1.0/"
+  }
+]
