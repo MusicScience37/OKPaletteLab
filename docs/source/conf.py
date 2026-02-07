@@ -3,6 +3,7 @@
 # pylint: disable=invalid-name
 # pylint: disable=redefined-builtin
 
+import os
 import pathlib
 
 THIS_DIR = pathlib.Path(__file__).absolute().parent
@@ -13,7 +14,7 @@ THIS_DIR = pathlib.Path(__file__).absolute().parent
 project = "OKPaletteLab"
 copyright = "2026, Kenta Kabashima"
 author = "Kenta Kabashima"
-release = "dev"
+release = os.getenv("PROJECT_VERSION", "dev")
 
 # -- General configuration ---------------------------------------------------
 
@@ -59,6 +60,11 @@ html_theme_options = {
     "pygments_dark_style": "native",
     "repository_url": "https://gitlab.com/MusicScience37Projects/utility-libraries/OKPaletteLab",
     "use_repository_button": True,
+    "switcher": {
+        "json_url": "https://okpalettelab.musicscience37.com/version_switcher_config.json",
+        "version_match": release,
+    },
+    "primary_sidebar_end": ["version-switcher"],
 }
 
 html_static_path: list[str] = ["_static"]

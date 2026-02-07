@@ -97,7 +97,7 @@ build document:
     - poetry env use $PYTHON_VERSION
     - poetry install
     - ./docs/update_apidoc.sh
-    - poetry run sphinx-build -b html -W -q docs/source docs/build  --doctree-dir docs/doctrees -D release=$PROJECT_VERSION
+    - poetry run sphinx-build -b html -W -q docs/source docs/build  --doctree-dir docs/doctrees
     - cp docs/version_switcher_config.json docs/build/
   cache:
     - key:
