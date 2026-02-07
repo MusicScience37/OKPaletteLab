@@ -38,6 +38,8 @@ def get_diverging_color_map_names() -> list[str]:
         "blue_red_light_wide",
         "blue_orange_dark",
         "blue_orange_dark_wide",
+        "blue_red_dark",
+        "blue_red_dark_wide",
         "rainbow",
     ]
 
