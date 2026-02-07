@@ -176,7 +176,7 @@ figure = plot_peaks(
 )
 figure.update_layout({
     "title": "Peaks Function with Diverging Color Maps",
-    "height": 1900,
+    "height": 2200,
 })
 figure.show()
 ```

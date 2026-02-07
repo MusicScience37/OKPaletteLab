@@ -16,7 +16,7 @@ ICON_MARGIN = 5
 ICON_FOREGROUND_RADIUS = 2
 
 COLOR_MAP_NAME = "blue_red_light"
-DARK_COLOR_MAP_NAME = "blue_orange_dark_wide"
+DARK_COLOR_MAP_NAME = "blue_orange_dark"
 BACKGROUND_COLOR = "#fbebe3"
 
 

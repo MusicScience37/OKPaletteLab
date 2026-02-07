@@ -33,7 +33,7 @@ def generate_gaussian_image(*, is_light: bool) -> None:
     else:
         matplotlib.pyplot.style.use("dark_background")
         file_name_suffix = "_dark"
-        color_map = ok_palette_lab.matplotlib.blue_orange_dark_wide
+        color_map = ok_palette_lab.matplotlib.blue_red_dark
 
     figure, axes = matplotlib.pyplot.subplots()
     heatmap = axes.imshow(
@@ -102,7 +102,7 @@ def generate_perlin_noise_image(*, is_light: bool) -> None:
     else:
         matplotlib.pyplot.style.use("dark_background")
         file_name_suffix = "_dark"
-        color_map = ok_palette_lab.matplotlib.blue_brown_light_wide
+        color_map = ok_palette_lab.matplotlib.blue_orange_dark_wide
 
     figure, axes = matplotlib.pyplot.subplots()
     heatmap = axes.imshow(

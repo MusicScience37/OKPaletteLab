@@ -63,7 +63,7 @@ figure = plot_color_maps(
     color_map_names=get_diverging_color_map_names(),
     z_range=(-1.0, 1.0),
 )
-figure.update_layout(height=900)
+figure.update_layout(height=1000)
 figure.show()
 ```
 
