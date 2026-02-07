@@ -5,7 +5,12 @@
     "url": "https://okpalettelab.musicscience37.com/"
   },
   {
-    "name": "v0.2.0 (latest)",
+    "name": "v0.3.0 (latest)",
+    "version": "v0.3.0",
+    "url": "https://okpalettelab.musicscience37.com/v0.3.0/"
+  },
+  {
+    "name": "v0.2.0",
     "version": "v0.2.0",
     "url": "https://okpalettelab.musicscience37.com/v0.2.0/"
   },
