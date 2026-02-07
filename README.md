@@ -73,6 +73,7 @@ pip install ok_palette_lab
 Documentation is available at:
 
 - [main branch](https://okpalettelab.musicscience37.com/)
+- [v0.3.0](https://okpalettelab.musicscience37.com/v0.3.0/)
 - [v0.2.0](https://okpalettelab.musicscience37.com/v0.2.0/)
 - [v0.1.0](https://okpalettelab.musicscience37.com/v0.1.0/)
 
