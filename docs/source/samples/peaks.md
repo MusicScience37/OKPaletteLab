@@ -29,7 +29,55 @@ plotly.io.templates.default = "plotly_white"
 from ok_palette_lab_tools.test_data.peaks import generate_peaks_data
 ```
 
-## Example of Plotting a Heatmap
+## Example of Plotting a Heatmap with a Sequential Color Map
+
+```{code-cell}
+---
+mystnb:
+  figure:
+    classes: only-light
+---
+import plotly.graph_objects
+import ok_palette_lab.plotly
+
+# Prepare data
+x, y, z = generate_peaks_data()
+
+# Create a heatmap
+figure = plotly.graph_objects.Figure()
+figure.add_heatmap(
+    z=z,
+    x=x,
+    y=y,
+    # Specify a color map here.
+    colorscale=ok_palette_lab.plotly.tea,
+    # Set zmid=0 for diverging color maps.
+    zmid=0,
+    zsmooth="best",
+)
+figure.update_layout(
+    title="Heatmap of Peaks Function",
+    yaxis={
+        "scaleanchor": "x",
+        "scaleratio": 1,
+    },
+)
+
+figure.show()
+```
+
+```{code-cell}
+---
+tags: [remove-input]
+mystnb:
+  figure:
+    classes: only-dark
+---
+figure.update_layout(template="plotly_dark")
+figure.show()
+```
+
+## Example of Plotting a Heatmap with a Diverging Color Map
 
 ```{code-cell}
 ---
@@ -139,7 +187,7 @@ figure = plot_peaks(
     version=4,
 )
 figure.update_layout({
-    "title": "Peaks Function with General Color Maps",
+    "title": "Peaks Function with Sequential Color Maps",
     "height": 1600,
 })
 figure.show()

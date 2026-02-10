@@ -95,7 +95,7 @@ figure = plot_perlin_noise(
     version=4,
 )
 figure.update_layout({
-    "title": "Perlin Noise with General Color Maps",
+    "title": "Perlin Noise with Sequential Color Maps",
     "height": 1600,
 })
 figure.show()

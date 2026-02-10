@@ -93,7 +93,7 @@ figure = plot_gaussian(
     version=1,
 )
 figure.update_layout({
-    "title": "Gaussian Function with General Color Maps",
+    "title": "Gaussian Function with Sequential Color Maps",
     "height": 1600,
 })
 figure.show()

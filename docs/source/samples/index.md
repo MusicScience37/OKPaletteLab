@@ -3,7 +3,7 @@
 ```{toctree}
 :maxdepth: 1
 
-gaussian
+positive_gaussian
 peaks
 perlin_noise
 spiral_pattern
