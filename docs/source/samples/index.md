@@ -4,6 +4,7 @@
 :maxdepth: 1
 
 positive_gaussian
+diverging_gaussian
 peaks
 perlin_noise
 spiral_pattern
