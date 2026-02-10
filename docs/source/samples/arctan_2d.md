@@ -49,7 +49,7 @@ figure.add_heatmap(
     zmax=360.0,
 )
 figure.update_layout(
-    title="Heatmap of Gaussian Function",
+    title="Heatmap of Arctan Function in 2D",
     yaxis={
         "scaleanchor": "x",
         "scaleratio": 1,

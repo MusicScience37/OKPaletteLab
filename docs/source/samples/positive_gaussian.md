@@ -86,14 +86,14 @@ mystnb:
 from ok_palette_lab_tools.color_maps.color_map_names import (
     get_general_color_map_names,
 )
-from ok_palette_lab_tools.docs.sample_gaussian import plot_gaussian
+from ok_palette_lab_tools.docs.sample_gaussian import plot_positive_gaussian
 
-figure = plot_gaussian(
+figure = plot_positive_gaussian(
     color_map_names=get_general_color_map_names(),
     version=1,
 )
 figure.update_layout({
-    "title": "Gaussian Function with General Color Maps",
+    "title": "Gaussian Function with Sequential Color Maps",
     "height": 1600,
 })
 figure.show()
