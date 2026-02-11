@@ -100,7 +100,9 @@ build document:
     - poetry run sphinx-build -b html -W -q docs/source docs/build  --doctree-dir docs/doctrees
     - cp docs/version_switcher_config.json docs/build/
     - mkdir -p docs/build/assets
-    - cp docs/icon/* docs/build/assets/
+    - cp docs/icon/*.png docs/build/assets/
+    - cp docs/icon/*.svg docs/build/assets/
+    - cp docs/icon/icon.ico docs/build/favicon.ico
     - cp docs/images/* docs/build/assets/
   cache:
     - key:
