@@ -6,7 +6,7 @@
 ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline-status/MusicScience37Projects%2Futility-libraries%2FOKPaletteLab?branch=main)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-![Icon](docs/icon/icon_for_docs.svg)
+![Icon](https://okpalettelab.musicscience37.com/assets/icon_for_docs.svg)
 
 Smooth color maps for Plotly and Matplotlib.
 
@@ -24,11 +24,11 @@ Smooth color maps for Plotly and Matplotlib.
 
 ### Sample Figures in Light Mode
 
-![Sample figure in light mode](docs/images/combined.png)
+![Sample figure in light mode](https://okpalettelab.musicscience37.com/assets/combined.png)
 
 ### Sample Figures in Dark Mode
 
-![Sample figure in dark mode](docs/images/combined_dark.png)
+![Sample figure in dark mode](https://okpalettelab.musicscience37.com/assets/combined_dark.png)
 
 ## Installation
 
@@ -96,6 +96,6 @@ The following features are planned for future releases:
 ## License
 
 This project is licensed under the MIT License.
-See [LICENSE.txt](LICENSE.txt) for details.
+See LICENSE.txt in the repository for details.
 
 Graphics created using the color maps in this project can be used freely without restriction.
