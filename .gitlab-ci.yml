@@ -99,6 +99,9 @@ build document:
     - ./docs/update_apidoc.sh
     - poetry run sphinx-build -b html -W -q docs/source docs/build  --doctree-dir docs/doctrees
     - cp docs/version_switcher_config.json docs/build/
+    - mkdir -p docs/build/assets
+    - cp docs/icon/* docs/build/assets/
+    - cp docs/images/* docs/build/assets/
   cache:
     - key:
         prefix: poetry-linux-$PYTHON_VERSION
