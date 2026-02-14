@@ -68,11 +68,13 @@ def create_gaussian(
 
 def create_positive_gaussian(
     color_map: list[tuple[float, str]],
+    reverse: bool = False,
 ) -> plotly.graph_objects.Figure:
     """Create a figure of Gaussian with only positive values.
 
     Args:
         color_map (list[tuple[float, str]]): Color map.
+        reverse (bool): Whether to reverse the color map.
 
     Returns:
         plotly.graph_objects.Figure: Figure of Gaussian.
@@ -85,6 +87,7 @@ def create_positive_gaussian(
         x=x,
         y=y,
         colorscale=color_map,
+        reversescale=reverse,
         zsmooth="best",
     )
     figure.update_layout(

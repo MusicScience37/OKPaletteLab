@@ -19,6 +19,7 @@ class ColorMapSegmentDef:
         num_interpolated_points: Number of total interpolated points in the segment.
         width: Width parameter for diverging segments (optional).
         power: Power parameter for diverging segments (optional).
+        gamma: Gamma parameter for linear lightness with gamma correction (optional).
     """
 
     type: str
@@ -26,6 +27,7 @@ class ColorMapSegmentDef:
     num_interpolated_points: int
     width: float | None
     power: float | None
+    gamma: float | None
 
 
 @dataclasses.dataclass
@@ -65,6 +67,7 @@ def load_color_maps_def() -> dict[str, ColorMapDef]:
             num_points = segment["num_interpolated_points"]
             width = segment.get("width", None)
             power = segment.get("power", None)
+            gamma = segment.get("gamma", None)
             segments.append(
                 ColorMapSegmentDef(
                     type=seg_type,
@@ -72,6 +75,7 @@ def load_color_maps_def() -> dict[str, ColorMapDef]:
                     num_interpolated_points=int(num_points),
                     width=float(width) if width is not None else None,
                     power=float(power) if power is not None else None,
+                    gamma=float(gamma) if gamma is not None else None,
                 )
             )
 

@@ -14,25 +14,25 @@
    <stop stop-color="#3b92d2" offset=".2146206"/>
    <stop stop-color="#3e87cd" offset=".2360827"/>
    <stop stop-color="#437dc6" offset=".2575447"/>
-   <stop stop-color="#4772be" offset=".2790068"/>
-   <stop stop-color="#4b68b5" offset=".3004689"/>
-   <stop stop-color="#4d5dac" offset=".3219309"/>
-   <stop stop-color="#4f53a1" offset=".343393"/>
-   <stop stop-color="#4f4997" offset=".364855"/>
-   <stop stop-color="#4f408c" offset=".3863171"/>
-   <stop stop-color="#4e3680" offset=".4077792"/>
-   <stop stop-color="#4c2a6d" offset=".4385194"/>
-   <stop stop-color="#49205d" offset=".4692597"/>
-   <stop stop-color="#4d154a" offset=".5"/>
-   <stop stop-color="#5b1741" offset=".5307403"/>
-   <stop stop-color="#691c42" offset=".5614806"/>
-   <stop stop-color="#792441" offset=".5922208"/>
-   <stop stop-color="#832b41" offset=".6136829"/>
-   <stop stop-color="#8d3342" offset=".635145"/>
-   <stop stop-color="#963a42" offset=".656607"/>
-   <stop stop-color="#a04242" offset=".6780691"/>
-   <stop stop-color="#a94a42" offset=".6995311"/>
-   <stop stop-color="#b25342" offset=".7209932"/>
+   <stop stop-color="#4872bd" offset=".2790068"/>
+   <stop stop-color="#4c68b3" offset=".3004689"/>
+   <stop stop-color="#4e5ea9" offset=".3219309"/>
+   <stop stop-color="#4f549e" offset=".343393"/>
+   <stop stop-color="#4f4b93" offset=".364855"/>
+   <stop stop-color="#4f4187" offset=".3863171"/>
+   <stop stop-color="#4d387c" offset=".4077792"/>
+   <stop stop-color="#4a2e67" offset=".4385194"/>
+   <stop stop-color="#462556" offset=".4692597"/>
+   <stop stop-color="#432241" offset=".5"/>
+   <stop stop-color="#551f3f" offset=".5307403"/>
+   <stop stop-color="#642341" offset=".5614806"/>
+   <stop stop-color="#752941" offset=".5922208"/>
+   <stop stop-color="#802f42" offset=".6136829"/>
+   <stop stop-color="#8a3643" offset=".635145"/>
+   <stop stop-color="#943d44" offset=".656607"/>
+   <stop stop-color="#9e4444" offset=".6780691"/>
+   <stop stop-color="#a84c43" offset=".6995311"/>
+   <stop stop-color="#b15443" offset=".7209932"/>
    <stop stop-color="#bb5c41" offset=".7424553"/>
    <stop stop-color="#c26641" offset=".7639173"/>
    <stop stop-color="#c97044" offset=".7853794"/>
