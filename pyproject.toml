@@ -1,6 +1,6 @@
 [project]
 name = "ok_palette_lab"
-version = "0.4.0"
+version = "0.5.0"
 description = "Smooth color maps using Oklch color space for Plotly and matplotlib."
 authors = [
     { name = "Kenta Kabashima", email = "kenta_program37@hotmail.co.jp" },
