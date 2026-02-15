@@ -63,11 +63,11 @@ def generate_positive_gaussian_image(*, is_light: bool) -> None:
     if is_light:
         matplotlib.pyplot.style.use("default")
         file_name_suffix = ""
-        color_map = ok_palette_lab.matplotlib.autumn_wide.reversed()
+        color_map = ok_palette_lab.matplotlib.autumn_wide
     else:
         matplotlib.pyplot.style.use("dark_background")
         file_name_suffix = "_dark"
-        color_map = ok_palette_lab.matplotlib.autumn_wide
+        color_map = ok_palette_lab.matplotlib.autumn_wide.reversed()
 
     figure, axes = matplotlib.pyplot.subplots()
     heatmap = axes.imshow(
