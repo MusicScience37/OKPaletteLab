@@ -36,11 +36,13 @@ class ColorMapDef:
         name: Name of the color map.
         description: Description of the color map.
         segments: List of segments defining the colors in the map.
+        reverse: Whether the color map should be reversed.
     """
 
     name: str
     description: str
     segments: list[ColorMapSegmentDef]
+    reverse: bool
 
 
 def load_color_maps_def() -> dict[str, ColorMapDef]:
@@ -75,10 +77,14 @@ def load_color_maps_def() -> dict[str, ColorMapDef]:
                 )
             )
 
+        reverse = False
+        if "reverse" in map_data:
+            reverse = bool(map_data["reverse"])
         map_def = ColorMapDef(
             name=map_data["name"],
             description=map_data["description"],
             segments=segments,
+            reverse=reverse,
         )
         color_maps_def[map_def.name] = map_def
 

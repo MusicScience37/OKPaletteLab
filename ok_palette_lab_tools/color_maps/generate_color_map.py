@@ -212,6 +212,10 @@ def generate_color_map(definition: ColorMapDef) -> ColorMap:
     # Normalize positions.
     colors = [(color[0] / last_position, color[1]) for color in colors]
 
+    if definition.reverse:
+        colors = [(1 - color[0], color[1]) for color in colors]
+        colors.reverse()
+
     return ColorMap(
         name=definition.name,
         description=definition.description,
