@@ -23,5 +23,7 @@
   "[jinja-html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "isort.args": ["--profile", "black"]
+  "isort.args": ["--profile", "black"],
+  "python-envs.defaultEnvManager": "ms-python.python:poetry",
+  "python-envs.defaultPackageManager": "ms-python.python:poetry"
 }
