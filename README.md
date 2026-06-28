@@ -16,9 +16,10 @@ Smooth color maps for Plotly and Matplotlib.
   - **Diverging** color maps for ranges centered at zero.
     This project provides diverging color maps for both light and dark modes.
   - **Cyclic** color maps for periodic ranges.
-- Currently supports the following libraries:
+- Currently supports the following libraries and tools:
   - [Plotly (graphing library for Python)](https://plotly.com/python/)
   - [Matplotlib](https://matplotlib.org/)
+  - [ParaView](https://www.paraview.org/)
 
 ## Sample Figures
 
@@ -70,6 +71,11 @@ pip install ok_palette_lab
     )
     ```
 
+- With ParaView:
+  - Color maps are provided as JSON files in the `ok_palette_lab_paraview` directory in this repository.
+  - Select one and import it into ParaView.
+    The list of color maps is available at ["Color Maps" page in the documentation](https://okpalettelab.musicscience37.com/color_maps.html).
+
 ## Simple Examples
 
 - [Example of a heatmap using Plotly](https://okpalettelab.musicscience37.com/how_to/plotly/use_in_heatmap.html)
@@ -86,7 +92,6 @@ This project was created in January 2026 and is under active development.
 The following features are planned for future releases:
 
 - Support for more graphing libraries in Python.
-- Support for ParaView.
 
 ## Repositories
 

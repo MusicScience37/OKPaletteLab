@@ -42,6 +42,7 @@
     "networkx",
     "numpy",
     "Oklch",
+    "ParaView",
     "Perlin",
     "pipenv",
     "plotly",
