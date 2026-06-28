@@ -5,7 +5,7 @@ repos:
       - id: trailing-whitespace
         exclude: \.svg$
       - id: end-of-file-fixer
-        exclude: \.svg$
+        exclude: \.(svg|json)$
       - id: check-yaml
       - id: check-added-large-files
   - repo: local
